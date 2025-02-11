@@ -8,11 +8,14 @@ export default function Footer() {
           <div className={styles.contact}>
             <h1 className={styles.heading}>LET’S GET IN TOUCH</h1>
             <p>Contact me</p>
-            <h2 className={styles.email}>jumi3487@gmail.com</h2>
+            <h2 className={styles.email}><a className={styles.email} href="#">jumi3487@gmail.com</a></h2>
           </div>
           <div className={styles.copyrightLinks}>
             <p>2025 © made by jumipham.com</p>
             <div>
+              <p>
+              <a className={styles.link} href="#">resume</a>
+              </p>
               <p>
                 <a className={styles.link} href="#">linkedin</a>
               </p>

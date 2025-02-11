@@ -11,7 +11,17 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4); /* Dark semi-transparent background */
-    backdrop-filter: blur(2px);
+    z-index: 1;
+    border-radius: 20px;;
+  }
+
+  .overlay:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none; /* Dark semi-transparent background */
     z-index: 1;
     border-radius: 20px;;
   }

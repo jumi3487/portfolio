@@ -1,35 +1,38 @@
 import Image from 'next/image';
-import Link from 'next/link'; // ✅ Import Next.js Link component
+import Link from 'next/link';
+import { useRouter } from 'next/router'; // ✅ Import useRouter to detect active page
 import styles from "./Header.module.css";
 
 export default function Header() {
+    const router = useRouter(); // ✅ Get the current route
+
     return (
         <>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                  <Link href="/" passHref>
-                    <Image className={styles.logoImage} src={'/images/logo.svg'} alt="logo" width={40} height={51} />
+                    <Link href="/" passHref>
+                        <Image className={styles.logoImage} src={'/images/logo.svg'} alt="logo" width={40} height={51} />
                     </Link>
                 </div>
                 <div className={styles.nav}>
                     <section>
-                        <Link href="/" passHref>
-                            <p className="active">Home</p>
+                        <Link href="/" passHref className={styles.link}>
+                            <p className={router.pathname === "/" ? styles.active : ""}>Home</p>
                         </Link>
                     </section>
                     <section>
-                        <Link href="/Works" passHref>
-                            <p>Works</p> {/* ✅ Clickable Link to Works Page */}
+                        <Link href="/Works" passHref className={styles.link}>
+                            <p className={router.pathname === "/Works" ? styles.active : ""}>Works</p>
                         </Link>
                     </section>
                     <section>
-                        <Link href="/about" passHref>
-                            <p>About</p>
+                        <Link href="/about" passHref className={styles.link}>
+                            <p className={router.pathname === "/about" ? styles.active : ""}>About</p>
                         </Link>
                     </section>
                     <section>
-                        <Link href="/contacts" passHref>
-                            <p>Contacts</p>
+                        <Link href="/contacts" passHref className={styles.link}>
+                            <p className={router.pathname === "/contacts" ? styles.active : ""}>Contacts</p>
                         </Link>
                     </section>
                 </div>

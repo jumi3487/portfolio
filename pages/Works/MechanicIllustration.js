@@ -60,13 +60,18 @@ export default function Illustration() {
 
           {/* ✅ Wrapped details images in a flex container */}
         <div className={styles.detailsContainer}>
-        <Image 
+          <div>
+          <p> Real Object Image </p>
+          <Image 
               src="/images/mechanic-illustration/real-object.png" 
               width={481} 
               height={481} 
               alt="Illustration Detail 1"
               className={styles.image}
             />
+            </div>
+            <div>
+             <p> Illustration  </p>
             <Image 
               src="/images/mechanic-illustration/mechanic-illustration.png" 
               width={695} 
@@ -74,9 +79,9 @@ export default function Illustration() {
               alt="Illustration Detail 2"
               className={styles.image}
             />
+            </div>
         </div>
         </div>
-
         <Footer />
       </div>
     </>

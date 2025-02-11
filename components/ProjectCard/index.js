@@ -16,7 +16,7 @@ export default function ProjectCard({ image, width, height, alt, name, date, id 
       <div className={styles.overlay}></div>
       
       <div className={styles.captionContainer}>
-        <p>{name}</p>
+        <h3>{name}</h3>
         <p >{date}</p>
       </div>
     </div>

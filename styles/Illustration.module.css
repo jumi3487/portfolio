@@ -46,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 .label {
@@ -64,6 +64,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 20px;
 }
 
 .overviewText {

@@ -7,8 +7,16 @@ export default function Footer() {
         <div className={styles.footer}>
           <div className={styles.contact}>
             <h1 className={styles.heading}>LET’S GET IN TOUCH</h1>
-            <p>Contact me</p>
-            <h2 className={styles.email}><a className={styles.email} href="#">jumi3487@gmail.com</a></h2>
+            <p className={styles.contactme}>Contact me</p>
+            <h2 className={styles.email}>
+              <a 
+                  className={styles.email} 
+                  href="mailto:jumi3487@gmail.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.target.blur()}>
+                jumi3487@gmail.com
+            </a></h2>
           </div>
           <div className={styles.copyrightLinks}>
             <p>2025 © made by jumipham.com</p>

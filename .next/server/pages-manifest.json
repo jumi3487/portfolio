@@ -3,6 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/Works": "pages/Works.js",
+  "/Works/Sparkly": "pages/Works/Sparkly.js",
   "/": "pages/index.js",
-  "/Works/Sparkly": "pages/Works/Sparkly.js"
+  "/Works/Illustration": "pages/Works/Illustration.js"
 }

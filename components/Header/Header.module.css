@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: var(--white); /* White background */
+}
+
+.logo {
+  color: var(--blue);
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  gap: 20px; /* Spacing between navigation items */
+}
+
+.nav section p {
+  margin: 0;
+  font-size: 16px;
+  color: black; /* Default text color */
+  text-decoration: none;
+  cursor: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect */
+.nav section p:hover {
+  color: var(--cornflowerblue); /* Change color on hover */
+}
+
+/* Active Page Styling */
+.nav .active {
+  color: var(--blue);
+  text-decoration: none;
+  
+}
+
+.link {
+  text-decoration: none;
+}

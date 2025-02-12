@@ -1,0 +1,199 @@
+/*.main,
+.footer {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+}*/
+
+.main, 
+.footer {
+  font-family: Helvetica, sans-serif;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%; /* Ensures it does not overflow */
+  padding: 50px 50px; /* Reduce padding */
+  box-sizing: border-box; }/* Ensures padding does not exceed the container 
+
+
+/** Section One **/
+
+.sectionOne {
+  margin: 80px 0 0 0;
+}
+.sectionOneHeader h1 {
+  font-size: var(--huge);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+  padding: 0;
+  margin-left: 0;
+}
+
+.sectionOne span {
+  color: var(--blue);
+}
+
+.exploreButton span {
+  color: var(--black);
+}
+.exploreButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.exploreButtonCircle {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.exploreButtonCircle svg {
+  stroke: white;
+}
+
+.explore-button:hover .circle {
+  opacity: 0.8;
+}
+
+/** Section One **/
+
+/**Section Two**/
+
+.sectionTwo {
+  width: 100%; /* Make sure it stays inside the parent */
+  max-width: 1791px;
+  
+
+}
+.sectionTwoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.sectionTwoHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 32.5px;
+  margin-bottom: 60px;
+}
+
+.sectionTwoHeader p {
+color: var(--black);
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.sectionTwoHeader button {
+  position: relative;
+  background: none;
+  border: none;
+  top: 5px;
+}
+
+.sectionTwoProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projectsCardImg {
+  border-radius: 20px;
+}
+
+.projectsTitle h3{
+  width: 280px;
+  color: var(--black);
+  /* Helvetica_Reg_40 */
+  font-family: Helvetica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.projectsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.projectsContent {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.projectsContentButton {
+  display: flex;
+  width: 130px;
+  height: 40px;
+  padding: 11px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: var(--blue);
+  border-radius: 50px;
+  border: none;
+  color: var(--white);
+}
+
+.projectsContentButton:hover {
+  background: var(--cornflowerblue);
+}
+/**Section Two**/
+
+/*Section THREE*/
+.sectionThree {
+  width: 100%;
+  max-width: 1791px;
+  
+}
+
+.ImageCardContainer {
+  display: flex; /* Changed from grid to flex for better alignment */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures items stay centered */
+  gap: 20px;
+  width: 100%; /* Full width to stay inside parent */
+  margin: 0 auto;
+  border-radius: 20px; /* Centers inside parent */
+}
+
+.image {
+  border-radius: 20px;
+}
+
+.divide {
+  border-bottom: 1px solid var(--black-20);
+  margin: 100px 0;
+}
+

@@ -20,15 +20,14 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%; /* Ensures it does not overflow */
-  padding: 50px 110px; /* Reduce padding */
-  box-sizing: border-box; /* Ensures padding does not exceed the container */
-  overflow: hidden;
-}
+  padding: 50px 50px; /* Reduce padding */
+  box-sizing: border-box; }/* Ensures padding does not exceed the container 
+
 
 /** Section One **/
 
 .sectionOne {
-  margin: 80px 0;
+  margin: 80px 0 0 0;
 }
 .sectionOneHeader h1 {
   font-size: var(--huge);
@@ -82,7 +81,12 @@
 
 /**Section Two**/
 
+.sectionTwo {
+  width: 100%; /* Make sure it stays inside the parent */
+  max-width: 1791px;
+  
 
+}
 .sectionTwoContainer {
   display: flex;
   flex-direction: column;
@@ -108,7 +112,7 @@ line-height: normal;
   position: relative;
   background: none;
   border: none;
-  top: 10px;
+  top: 5px;
 }
 
 .sectionTwoProjects {
@@ -165,3 +169,31 @@ line-height: normal;
   background: var(--cornflowerblue);
 }
 /**Section Two**/
+
+/*Section THREE*/
+.sectionThree {
+  width: 100%;
+  max-width: 1791px;
+  
+}
+
+.ImageCardContainer {
+  display: flex; /* Changed from grid to flex for better alignment */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures items stay centered */
+  gap: 20px;
+  width: 100%; /* Full width to stay inside parent */
+  margin: 0 auto;
+  border-radius: 20px; /* Centers inside parent */
+}
+
+.image {
+  border-radius: 20px;
+}
+
+.divide {
+  border-bottom: 1px solid var(--black-20);
+  margin: 100px 0;
+}
+

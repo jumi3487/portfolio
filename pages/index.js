@@ -4,6 +4,14 @@ import Header from "../components/Header";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import HeadArea from "../components/HeadArea";
+import MotionGraphics from "../components/MotionGraphics";
+
+const graphicDesigns = [
+  { src: "/images/illustration-thumbnail-3.png", alt: "Illustration of a Japanese Café" },
+  { src: "/images/mechanic-illustration-thumbnail-3.png", alt: "Coffee Maker Product Render" },
+  { src: "/images/sparkly-thumbnail-3.png", alt: "Sparkly Soda Can Packaging" },
+  { src: "/images/menu-thumbnail-3.png", alt: "Savoria Bistro Menu Design" },
+];
 
 
 export default function Home() {
@@ -40,6 +48,8 @@ export default function Home() {
               </button>
             {/*Section One End*/}
             </div> 
+            <div className={styles.divide}></div>
+
             {/*Section Two*/}
             <div className={styles.sectionTwo}>
               <div className={styles.sectionTwoContainer}>
@@ -92,7 +102,7 @@ export default function Home() {
                         <p>ArtFlow is an AI-powered drawing app that helps artists generate ideas and improve their workflow. It has a clean, easy-to-use design with no distractions. Users can enter ideas, and the AI creates prompts to boost creativity, making digital art smoother for beginners and pros alike.
                         </p>
                         <p>
-                        <strong>My role:</strong> Lead Digital Designer and Frontend Developer
+                        <strong>My role:</strong> Lead Digital Designer, UX/UI Designer and Frontend Developer
                         </p>
                       </div>
                       <button className={styles.projectsContentButton}>Learn more</button>
@@ -100,6 +110,7 @@ export default function Home() {
                     {/*Section Two - Projects - ArtFlow*/}
                   </div>
                 </div>
+
                 <div>
                    {/*Section Two - Projects - Lunette*/}
                    <div className={styles.sectionTwoProjects}>
@@ -113,21 +124,80 @@ export default function Home() {
                     </div>
                     <div className={styles.projectsInfo}>
                       <div className={styles.projectsContent}>
-                        <p>Lunette is a premium eyewear brand targeting fashion-conscious individuals who seek both luxury and functionality. My goal was to design a cohesive digital experience that reflects the brand’s sophisticated identity while ensuring usability and accessibility.
+                        <p>Lunette is a premium eyewear brand catering to fashion-conscious individuals who value both luxury and functionality. The website wireframe and interface design prioritize a cohesive digital experience that reflects the brand’s sophisticated identity while ensuring usability and accessibility.
                         </p>
                         <p>
-                        <strong>My role:</strong> Lead Digital Designer and Frontend Developer
+                        <strong>My role:</strong> UX/UI Designer
                         </p>
                       </div>
                       <button className={styles.projectsContentButton}>Learn more</button>
                     </div>
-                    {/*Section Two - Projects - ArtFlow*/}
-                  </div>
                     {/*Section Two - Projects - Lunette*/}
                 </div>
               </div>
+
+              <div className={styles.divide}></div>
+              </div>
+
+              {/*Section Three*/}
+              <div className={styles.sectionThree}>
+                <div className={styles.sectionThreeContainer}>
+                  <div className={styles.sectionTwoHeader}>
+                    <p>
+                      Graphic Designs 
+                    </p>
+                    <button>
+                      <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Icon/Arrow/Next">
+                      <path id="Vector" d="M18.1538 2L32 14.8571L18.1538 27.7143M30.0769 14.8571L2 14.8571" stroke="#181818" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      </svg>
+                      </button>
+                  </div>
+                  <div className={styles.ImageCardContainer}>
+                    {graphicDesigns.map((project, index) => (
+                      <div key={index} className={styles.card}>
+                        <Image
+                          src={project.src}
+                          alt={project.alt}
+                          width={870}
+                          height={510}
+                          className={styles.image}
+                        />
+                      </div>
+                    ))}
+                  </div>
+              </div>
+              {/*Section Three End*/}
+
+              <div className={styles.divide}></div>
+
+              <div className={styles.sectionFour}>
+                {/*Section Four*/}
+                <div>
+                  <div className={styles.sectionTwoHeader}>
+                    <p>
+                      Motion Graphics 
+                    </p>
+                    <button>
+                      <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Icon/Arrow/Next">
+                      <path id="Vector" d="M18.1538 2L32 14.8571L18.1538 27.7143M30.0769 14.8571L2 14.8571" stroke="#181818" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      </svg>
+                    </button>
+                  </div>
+                  
+                    <MotionGraphics/>
+
+                  {/* </div> */}
+                </div>
+                {/*Section Four*/}
+              </div>   
+
+              </div>
+            </div>
           </div>
-        </div>
       </main>
       <footer className={styles.footer}>
         <Footer/>

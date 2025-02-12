@@ -4,6 +4,5 @@
   "/_document": "pages/_document.js",
   "/Works": "pages/Works.js",
   "/": "pages/index.js",
-  "/Works/Illustration": "pages/Works/Illustration.js",
   "/Works/Sparkly": "pages/Works/Sparkly.js"
 }

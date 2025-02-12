@@ -20,11 +20,6 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/Works.js"
     ],
-    "/Works/Illustration": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Works/Illustration.js"
-    ],
     "/Works/Sparkly": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

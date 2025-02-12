@@ -28,11 +28,10 @@
     line-height: normal;
   }
   .motionGraphicProjectsh2 {
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    max-width: 260px;
   }
 
   .projectsContentButton {
@@ -58,4 +57,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.ProjectInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
 }

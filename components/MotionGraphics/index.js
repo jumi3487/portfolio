@@ -34,7 +34,7 @@ export default function MotionGraphics() {
                     {/*Motion Graphic 2*/}
             <div className={styles.motionGraphicProjects2}>
                     <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
-                    <div className={styles.ProjectInfo}>
+                    <div className={styles.ProjectInfo2}>
                     <h1 className={styles.motionGraphicProjectsh1}>02</h1>
                     <h2 className={styles.motionGraphicProjectsh2}>Five Layers Of Ocean</h2>
                     <button className={styles.projectsContentButton}>Watch it</button>

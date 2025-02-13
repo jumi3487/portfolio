@@ -171,26 +171,7 @@ line-height: normal;
 /**Section Two**/
 
 /*Section THREE*/
-.sectionThree {
-  width: 100%;
-  max-width: 1791px;
-  
-}
 
-.ImageCardContainer {
-  display: flex; /* Changed from grid to flex for better alignment */
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; /* Ensures items stay centered */
-  gap: 20px;
-  width: 100%; /* Full width to stay inside parent */
-  margin: 0 auto;
-  border-radius: 20px; /* Centers inside parent */
-}
-
-.image {
-  border-radius: 20px;
-}
 
 .divide {
   border-bottom: 1px solid var(--black-20);

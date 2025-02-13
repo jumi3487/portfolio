@@ -5,13 +5,8 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import HeadArea from "../components/HeadArea";
 import MotionGraphics from "../components/MotionGraphics";
+import GraphicDesigns from "../components/GraphicDesigns";
 
-const graphicDesigns = [
-  { src: "/images/illustration-thumbnail-3.png", alt: "Illustration of a Japanese Café" },
-  { src: "/images/mechanic-illustration-thumbnail-3.png", alt: "Coffee Maker Product Render" },
-  { src: "/images/sparkly-thumbnail-3.png", alt: "Sparkly Soda Can Packaging" },
-  { src: "/images/menu-thumbnail-3.png", alt: "Savoria Bistro Menu Design" },
-];
 
 
 export default function Home() {
@@ -154,19 +149,7 @@ export default function Home() {
                       </svg>
                       </button>
                   </div>
-                  <div className={styles.ImageCardContainer}>
-                    {graphicDesigns.map((project, index) => (
-                      <div key={index} className={styles.card}>
-                        <Image
-                          src={project.src}
-                          alt={project.alt}
-                          width={870}
-                          height={510}
-                          className={styles.image}
-                        />
-                      </div>
-                    ))}
-                  </div>
+                  <GraphicDesigns/>
               </div>
               {/*Section Three End*/}
 
@@ -187,13 +170,11 @@ export default function Home() {
                       </svg>
                     </button>
                   </div>
-                  
                     <MotionGraphics/>
-
-                  {/* </div> */}
                 </div>
                 {/*Section Four*/}
-              </div>   
+              </div>  
+              <div className={styles.divide}></div> 
 
               </div>
             </div>

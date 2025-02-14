@@ -21,7 +21,20 @@ export default function MotionGraphics() {
     <section className={styles.container}>
       {/* Motion Graphic Cards */}
       {/*Motion Graphic 1*/}
+
         <div className={styles.motionGraphicContainer}>
+          <div className={styles.sectionHeader}>
+              <p>
+                Motion Graphics 
+              </p>
+              <button>
+                <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icon/Arrow/Next">
+                <path id="Vector" d="M18.1538 2L32 14.8571L18.1538 27.7143M30.0769 14.8571L2 14.8571" stroke="#181818" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                </svg>
+              </button>
+            </div>
             <div className={styles.motionGraphicProjects}>
                 <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
                 <div className={styles.ProjectInfo}>

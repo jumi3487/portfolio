@@ -11,20 +11,33 @@ const graphicDesigns = [
   export default function GraphicDesigns() {
     return (
       <section className={styles.container}>
-  
-        {/* Grid Layout */}
-        <div className={styles.grid}>
-          {graphicDesigns.map((project, index) => (
-            <div key={index} className={styles.card}>
-              <Image
-                src={project.src}
-                alt={project.alt}
-                width={500}
-                height={350}
-                className={styles.image}
-              />
+        <div className={styles.sectionThreeContainer}>
+            <div className={styles.sectionHeader}>
+              <p>
+                Graphic Designs 
+              </p>
+              <button>
+                <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icon/Arrow/Next">
+                <path id="Vector" d="M18.1538 2L32 14.8571L18.1538 27.7143M30.0769 14.8571L2 14.8571" stroke="#181818" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                </svg>
+                </button>
             </div>
-          ))}
+        {/* Grid Layout */}
+          <div className={styles.grid}>
+            {graphicDesigns.map((project, index) => (
+              <div key={index} className={styles.card}>
+                <Image
+                  src={project.src}
+                  alt={project.alt}
+                  width={870}
+                  height={510}
+                  className={styles.image}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     );

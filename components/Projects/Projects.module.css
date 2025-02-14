@@ -1,0 +1,96 @@
+
+.sectionTwo {
+    width: 100%; /* Make sure it stays inside the parent */
+    max-width: 1791px;
+    
+  
+  }
+  .sectionTwoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  .sectionTwoProjects {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Adjusts spacing */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+  
+  .sectionTwoHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 32.5px;
+    margin-bottom: 60px;
+  }
+  
+  .sectionTwoHeader p {
+  color: var(--black);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .sectionTwoHeader button {
+    position: relative;
+    background: none;
+    border: none;
+    top: 5px;
+  }
+  
+ /* .sectionTwoProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }*/
+  
+  .projectsCardImg {
+    border-radius: 20px;
+  }
+  
+  .projectsTitle h3{
+    width: 280px;
+    color: var(--black);
+    /* Helvetica_Reg_40 */
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .projectsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .projectsContent {
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  
+  .projectsContentButton {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    padding: 11px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--blue);
+    border-radius: 50px;
+    border: none;
+    color: var(--white);
+  }
+  
+  .projectsContentButton:hover {
+    background: var(--cornflowerblue);
+  }

@@ -4,6 +4,28 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .sectionHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 32.5px;
+    margin-bottom: 60px;
+  }
+  
+  .sectionHeader p {
+  color: var(--black);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .sectionHeader button {
+    position: relative;
+    background: none;
+    border: none;
+    top: 5px;
+  }
   
   .header {
     width: 100%;
@@ -29,7 +51,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1790px;
   }
   
   .card {

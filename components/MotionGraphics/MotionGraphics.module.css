@@ -5,6 +5,28 @@
     justify-content: space-between;
     gap: 60px;
   }
+
+  .sectionHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 32.5px;
+    margin-bottom: 60px;
+  }
+  
+  .sectionHeader p {
+  color: var(--black);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .sectionHeader button {
+    position: relative;
+    background: none;
+    border: none;
+    top: 5px;
+  }
   .motionGraphicProjects {
     display: flex;
     flex-direction: row;

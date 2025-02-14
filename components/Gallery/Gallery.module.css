@@ -1,41 +1,50 @@
-.column1 {
-    display: grid;
-    grid-template-columns: 0.8fr 0.8fr 1.4fr; /* Adjust column widths */
+.row {
+    display: flex; /* Aligns both column1 and column2 properly */
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
-    max-width: 1790px; /* Ensures grid doesn't exceed this width */
-    margin: auto; /* Centers the grid */
-}
-.column2 {
-    display: grid;
-    grid-template-columns: 1.5fr 0.8fr; /* Adjust column widths */
-    gap: 20px;
-    padding: 20px;
-    max-width: 1790px; /* Ensures grid doesn't exceed this width */
-    margin: auto; /* Centers the grid */
+    max-width: 1790px; /* Limits width of the whole gallery */
+    margin: auto; /* Centers everything */
+    overflow: hidden; /* Prevents content from spilling out */
 }
 
-/* Ensures all images have the same height */
-.row {
-    width: 100%;
+.column1 {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr; /* First two images narrower */
+    gap: 20px;
+    max-width: 1790px;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr; /* Bottom row layout */
+    gap: 20px;
+    max-width: 1790px;
+}
+
+/* Ensure all images stay inside their containers */
+.image {
+    width: 100%; /* Makes sure images do not exceed column */
+    height: 510px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .column {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    .row {
+        flex-direction: column; /* Stack columns in smaller screens */
+        align-items: center;
+    }
+
+    .column1, .column2 {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .column {
-        display: grid;
-        grid-template-columns: 1fr; /* Stack images in one column */
+    .row {
+        width: 100%;
+        padding: 10px;
     }
-}
-
-.image {
-    border-radius: 20px;
-    object-fit: cover;
 }

@@ -67,6 +67,18 @@ export default function Home() {
               <div className={styles.divide}></div> 
               </div>
               <div className={styles.gallery}>
+                <button className={styles.exploreButton}>
+                <div className={styles.exploreButtonCircle}>
+                  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icon/Arrow/Down">
+                  <path id="Vector" d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2" stroke="#E7ECEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  </svg>
+                </div>
+                <span>
+                  My visual feed
+                </span>
+                </button>
                 <Gallery/>
               </div>
             </div>

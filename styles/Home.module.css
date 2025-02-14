@@ -180,5 +180,8 @@ line-height: normal;
 
 .gallery {
   max-width: 1790px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 

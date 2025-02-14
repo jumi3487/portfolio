@@ -9,6 +9,7 @@ const gallery = [
     { src: "/images/gallery/5.png", alt: "Stickers" },
 ];
 
+
 export default function Gallery() {
     return (
         <div className={styles.row}>

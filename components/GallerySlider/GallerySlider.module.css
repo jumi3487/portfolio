@@ -1,0 +1,46 @@
+.carouselContainer {
+    max-width: 1800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Swiper Navigation Buttons */
+  .swiper-button-prev, 
+  .swiper-button-next {
+    color: #181818;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #888;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #181818;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .carouselContainer {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,41 @@
+.column1 {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr; /* Adjust column widths */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1790px; /* Ensures grid doesn't exceed this width */
+    margin: auto; /* Centers the grid */
+}
+.column2 {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr; /* Adjust column widths */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1790px; /* Ensures grid doesn't exceed this width */
+    margin: auto; /* Centers the grid */
+}
+
+/* Ensures all images have the same height */
+.row {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .column {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack images in one column */
+    }
+}
+
+.image {
+    border-radius: 20px;
+    object-fit: cover;
+}

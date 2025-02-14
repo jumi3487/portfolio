@@ -7,6 +7,7 @@ import HeadArea from "../components/HeadArea";
 import Projects from "../components/Projects";
 import MotionGraphics from "../components/MotionGraphics";
 import GraphicDesigns from "../components/GraphicDesigns";
+import Gallery from "@/components/Gallery";
 
 
 
@@ -64,6 +65,9 @@ export default function Home() {
                 {/*Section Four*/}
               </div>  
               <div className={styles.divide}></div> 
+              </div>
+              <div className={styles.gallery}>
+                <Gallery/>
               </div>
             </div>
       </main>

@@ -178,3 +178,7 @@ line-height: normal;
   margin: 100px 0;
 }
 
+.gallery {
+  max-width: 1790px;
+}
+

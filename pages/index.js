@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import gsap from "gsap";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Header from "../components/Header";
@@ -9,83 +11,179 @@ import MotionGraphics from "../components/MotionGraphics";
 import GraphicDesigns from "../components/GraphicDesigns";
 import Gallery from "@/components/Gallery";
 
-
-
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    let currentValue = 0;
+
+    function updateCounter() {
+      if (currentValue >= 100) {
+        setTimeout(() => {
+
+          const timeline = gsap.timeline();
+
+          timeline.to(".loadingScreen", {
+            opacity: 0,
+            duration: 1,
+            ease: "power2.out",
+          })
+  
+          // ✅ Step 2: Then move text up AFTER the background fades out
+          .to(".loadingScreen h1", {
+            y: -300,
+            duration: 1.2,
+            ease: "power4.inOut",
+            onComplete: () => {
+              setLoading(false); // Hide loader after animation
+            },
+          }, "-=1.2");
+
+          // Main content entrance animation
+          gsap.fromTo(
+            ".sectionOne h1",
+            { opacity: 0, y: 50 },
+            {
+              opacity: 0,
+              y: -80,
+              duration: 1.5,
+              ease: "power4.inOut",
+              delay: 0.5,
+              stagger: {
+                amount: 0.5,
+              },
+            }
+          );
+
+          gsap.fromTo(
+            ".pageContainer > div",
+            { opacity: 0, y: 40 },
+            {
+              opacity: 1,
+              y: 0,
+              stagger: 0.2,
+              duration: 1.2,
+              ease: "power4.out",
+              delay: 1,
+            }
+          );
+        }, 500);
+        return;
+      }
+
+      currentValue += Math.floor(Math.random() * 10) + 1;
+      if (currentValue > 100) {
+        currentValue = 100;
+      }
+
+      setCounter(currentValue);
+      let delay = Math.floor(Math.random() * 150) + 50; // Random speed
+      setTimeout(updateCounter, delay);
+    }
+
+    updateCounter();
+  }, []);
+
   return (
     <>
-
-      <HeadArea/>
+      <HeadArea />
       
-      <main className={styles.main}>
-        <Header />
+      {/* Loading Screen */}
+      {loading && (
+        <div className={`${styles.loadingScreen} loadingScreen`}>
+          <h1 className={styles.counter}>{counter}%</h1>
+          <div className={styles.loadingBar}>
+            <div
+              className={styles.loadingProgress}
+              style={{ width: `${counter}%` }}
+            ></div>
+          </div>
+        </div>
+      )}
 
-        <div className={styles.pageContainer}>
-          {/*Section One*/}
-          <div className={styles.sectionOne}>
-            <div className={styles.sectionOneHeader}>
-              <h1>Hello! I am <span>Jumi</span>
-                <br/>
-                <span>Join my journey</span> as a 
-                <br/>
-                passionate <span>Digital Designer</span>
-              </h1>
-            </div>
-            <button className={styles.exploreButton}>
-              <div className={styles.exploreButtonCircle}>
-                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Icon/Arrow/Down">
-                <path id="Vector" d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2" stroke="#E7ECEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                </svg>
+      {/* Main Content (Hidden until loading is complete) */}
+      {!loading && (
+        <main className={`${styles.main} main`}>
+          <Header />
+
+          <div className={`${styles.pageContainer} pageContainer`}>
+            {/* Section One */}
+            <div className={styles.sectionOne}>
+              <div className={styles.sectionOneHeader}>
+                <h1>
+                  Hello! I am <span>Jumi</span>
+                  <br />
+                  <span>Join my journey</span> as a
+                  <br />
+                  passionate <span>Digital Designer</span>
+                </h1>
               </div>
-              <span>
-                Explore my works
-              </span>
-              </button>
-            {/*Section One End*/}
-          </div> 
-          <div className={styles.divide}></div>
-          {/*Section Two */}
-            <Projects/>
-          {/*Section One End*/}
-
-          {/*Section Three*/}
-          <div className={styles.sectionThree}>
-            <GraphicDesigns/>
-              {/*Section Three End*/}
-
-          <div className={styles.divide}></div>
-              
-                {/*Section Four*/}
-              <div className={styles.sectionFour}>
-                <div>
-                    <MotionGraphics/>
-                </div>
-                {/*Section Four*/}
-              </div>  
-              <div className={styles.divide}></div> 
-              </div>
-              <div className={styles.gallery}>
-                <button className={styles.exploreButton}>
+              <button className={styles.exploreButton}>
                 <div className={styles.exploreButtonCircle}>
-                  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="Icon/Arrow/Down">
-                  <path id="Vector" d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2" stroke="#E7ECEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Icon/Arrow/Down">
+                      <path
+                        id="Vector"
+                        d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2"
+                        stroke="#E7ECEF"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </g>
                   </svg>
                 </div>
-                <span>
-                  My visual feed
-                </span>
-                </button>
-                <Gallery/>
-              </div>
+                <span>Explore my works</span>
+              </button>
             </div>
-      </main>
-      <footer className={styles.footer}>
-        <Footer/>
-      </footer>
+
+            <div className={styles.divide}></div>
+
+            {/* Sections */}
+            <Projects />
+            <GraphicDesigns />
+            <MotionGraphics />
+
+            <div className={styles.gallery}>
+              <button className={styles.exploreButton}>
+                <div className={styles.exploreButtonCircle}>
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Icon/Arrow/Down">
+                      <path
+                        id="Vector"
+                        d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2"
+                        stroke="#E7ECEF"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <span>My visual feed</span>
+              </button>
+              <Gallery />
+            </div>
+          </div>
+
+          <footer className={styles.footer}>
+            <Footer />
+          </footer>
+        </main>
+      )}
     </>
   );
 }

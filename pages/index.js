@@ -84,6 +84,29 @@ export default function Home() {
           <div className={`${styles.pageContainer} pageContainer`}>
             {/* Sections */}
             <Introduction/>
+            <button className={styles.exploreButton}>
+                <div className={styles.exploreButtonCircle}>
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Icon/Arrow/Down">
+                      <path
+                        id="Vector"
+                        d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2"
+                        stroke="#E7ECEF"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <span>Explore my works</span>
+              </button>
             <div className={styles.divide}></div>
             <Projects />
             <div className={styles.divide}></div>

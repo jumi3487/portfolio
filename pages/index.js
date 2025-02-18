@@ -148,8 +148,11 @@ export default function Home() {
 
             {/* Sections */}
             <Projects />
+            <div className={styles.divide}></div>
             <GraphicDesigns />
+            <div className={styles.divide}></div>
             <MotionGraphics />
+            <div className={styles.divide}></div>
 
             <div className={styles.gallery}>
               <button className={styles.exploreButton}>

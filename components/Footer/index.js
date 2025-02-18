@@ -19,19 +19,19 @@ export default function Footer() {
             </a></h2>
           </div>
           <div className={styles.copyrightLinks}>
-            <p>2025 © made by jumipham.com</p>
+            <p>2025 © made by <a className={styles.link} src="https://www.instagram.com/jumi.pham.2000/">jumijumi00</a></p>
             <div>
               <p>
-              <a className={styles.link} href="#">resume</a>
+              <a className={styles.link} href="/Jumi_Pham_Resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
               </p>
               <p>
-                <a className={styles.link} href="#">linkedin</a>
+                <a className={styles.link} href="https://www.linkedin.com/in/jumi-pham/">linkedin</a>
               </p>
               <p>
-                <a className={styles.link} href="#">instagram</a>
+                <a className={styles.link} href="https://www.instagram.com/jumi.pham.2000/">instagram</a>
               </p>
               <p>
-                <a className={styles.link} href="#">behance</a>
+                <a className={styles.link} href="https://www.behance.net/jumi3487bea6">behance</a>
               </p>
             </div>
           </div>

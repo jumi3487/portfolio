@@ -196,7 +196,9 @@ line-height: normal;
   height: 100%;
   z-index: 9999;
   background: var(--blue);
-  padding: 500px 60px 0 60px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 50px;
 }
 
 .counter {

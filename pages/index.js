@@ -6,10 +6,12 @@ import Header from "../components/Header";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import HeadArea from "../components/HeadArea";
+import Introduction from "../components/Introduction";
 import Projects from "../components/Projects";
 import MotionGraphics from "../components/MotionGraphics";
 import GraphicDesigns from "../components/GraphicDesigns";
-import Gallery from "@/components/Gallery";
+import Gallery from "../components/Gallery";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -40,34 +42,6 @@ export default function Home() {
             },
           }, "-=1.2");
 
-          // Main content entrance animation
-          gsap.fromTo(
-            ".sectionOne h1",
-            { opacity: 0, y: 50 },
-            {
-              opacity: 0,
-              y: -80,
-              duration: 1.5,
-              ease: "power4.inOut",
-              delay: 0.5,
-              stagger: {
-                amount: 0.5,
-              },
-            }
-          );
-
-          gsap.fromTo(
-            ".pageContainer > div",
-            { opacity: 0, y: 40 },
-            {
-              opacity: 1,
-              y: 0,
-              stagger: 0.2,
-              duration: 1.2,
-              ease: "power4.out",
-              delay: 1,
-            }
-          );
         }, 500);
         return;
       }
@@ -108,45 +82,9 @@ export default function Home() {
           <Header />
 
           <div className={`${styles.pageContainer} pageContainer`}>
-            {/* Section One */}
-            <div className={styles.sectionOne}>
-              <div className={styles.sectionOneHeader}>
-                <h1>
-                  Hello! I am <span>Jumi</span>
-                  <br />
-                  <span>Join my journey</span> as a
-                  <br />
-                  passionate <span>Digital Designer</span>
-                </h1>
-              </div>
-              <button className={styles.exploreButton}>
-                <div className={styles.exploreButtonCircle}>
-                  <svg
-                    width="16"
-                    height="19"
-                    viewBox="0 0 16 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="Icon/Arrow/Down">
-                      <path
-                        id="Vector"
-                        d="M14.5 10.0769L8.25 17L2 10.0769M8.25 16.0385L8.25 2"
-                        stroke="#E7ECEF"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <span>Explore my works</span>
-              </button>
-            </div>
-
-            <div className={styles.divide}></div>
-
             {/* Sections */}
+            <Introduction/>
+            <div className={styles.divide}></div>
             <Projects />
             <div className={styles.divide}></div>
             <GraphicDesigns />

@@ -3,6 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/Draft": "pages/Draft.js",
-  "/Works": "pages/Works.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/Works/MechanicIllustration": "pages/Works/MechanicIllustration.js",
+  "/Works/Beep": "pages/Works/Beep.js",
+  "/Works/Lunette": "pages/Works/Lunette.js"
 }

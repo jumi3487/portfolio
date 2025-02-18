@@ -1,5 +1,6 @@
 import styles from './Projects.module.css';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects(){
     return (
@@ -21,23 +22,27 @@ export default function Projects(){
                   </div>
                 <div className={styles.sectionTwoProjects}>
                   {/*Section Two - Projects - Beep*/}
-                  <div className={styles.projectsTitle}>
-                    <h3>Beep</h3>
-                    <h3>Sep – Dec<br/>2024</h3>
-                  </div>
-                  <div>
-                    <Image className={styles.projectsCardImg} src={'/images/beep-thumbnail-2.png'} alt="logo" width={800} height={533} />
-                  </div>
-                  <div className={styles.projectsInfo}>
-                    <div className={styles.projectsContent}>
-                      <p>Beep is a real-time safety app that empowers users with a crime heat map, SOS alerts, and AI-driven navigation to ensure secure travel and access to safe zones.
-                      </p>
-                      <p>
-                      <strong>My role:</strong> Lead Digital Designer and Frontend Developer
-                      </p>
+                    <div className={styles.projectsTitle}>
+                      <h3>Beep</h3>
+                      <h3>Sep – Dec<br/>2024</h3>
                     </div>
-                    <button className={styles.projectsContentButton}>Learn more</button>
-                  </div>
+                    <div>
+                      <Link href="/Works/Beep" passHref>
+                        <Image className={styles.projectsCardImg} src={'/images/beep-thumbnail-2.png'} alt="logo" width={800} height={533} />
+                      </Link>
+                    </div>
+                    <div className={styles.projectsInfo}>
+                      <div className={styles.projectsContent}>
+                        <p>Beep is a real-time safety app that empowers users with a crime heat map, SOS alerts, and AI-driven navigation to ensure secure travel and access to safe zones.
+                        </p>
+                        <p>
+                        <strong>My role:</strong> Lead Digital Designer and Frontend Developer
+                        </p>
+                      </div>
+                      <Link href="/Works/Beep" passHref>
+                        <button className={styles.projectsContentButton}>Learn more</button>
+                      </Link>
+                    </div>
                   {/*Section Two - Projects - Beep*/}
                 </div>
       
@@ -49,7 +54,9 @@ export default function Projects(){
                       <h3>Jan – May<br/>2024</h3>
                     </div>
                     <div>
-                      <Image className={styles.projectsCardImg} src={'/images/artflow-thumbnail-2.png'} alt="logo" width={800} height={533} />
+                      <Link href="/Works/ArtFlow" passHref>
+                        <Image className={styles.projectsCardImg} src={'/images/artflow-thumbnail-2.png'} alt="logo" width={800} height={533} />
+                      </Link>
                     </div>
                     <div className={styles.projectsInfo}>
                       <div className={styles.projectsContent}>
@@ -59,7 +66,9 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer, UX/UI Designer and Frontend Developer
                         </p>
                       </div>
-                      <button className={styles.projectsContentButton}>Learn more</button>
+                      <Link href="/Works/ArtFlow" passHref>
+                        <button className={styles.projectsContentButton}>Learn more</button>
+                      </Link>
                     </div>
                     {/*Section Two - Projects - ArtFlow*/}
                   </div>
@@ -74,7 +83,9 @@ export default function Projects(){
                       <h3>Nov – Dec<br/>2023</h3>
                     </div>
                     <div>
-                      <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
+                      <Link href="/Works/Lunette" passHref>
+                        <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
+                      </Link>
                     </div>
                     <div className={styles.projectsInfo}>
                       <div className={styles.projectsContent}>
@@ -84,7 +95,9 @@ export default function Projects(){
                         <strong>My role:</strong> UX/UI Designer
                         </p>
                       </div>
-                      <button className={styles.projectsContentButton}>Learn more</button>
+                      <Link href="/Works/Lunette" passHref>
+                        <button className={styles.projectsContentButton}>Learn more</button>
+                      </Link>
                     </div>
                     {/*Section Two - Projects - Lunette*/}
                 </div>

@@ -2,7 +2,7 @@ import styles from "../Introduction/Introduction.module.css";
 import { useState, useEffect } from "react";
 
 export default function Introduction(){
-    const roles = ["Digital Designer", "UX/UI Designer", "Graphic Designer"];
+    const roles = ["Digital Designer", "UX/UI Designer"];
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0); 
     const [charIndex, setCharIndex] = useState(0);

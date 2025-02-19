@@ -1,0 +1,159 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 110px;
+
+}
+.title h1 {
+    width: 80%;
+    position: relative;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title span {
+    color: var(--blue);
+}
+
+.image {
+    border-radius: 20px;
+}
+
+
+.infoContainer {
+    max-width: 1437px;
+    width: 100%;
+}
+
+.overviewContainer {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+    margin-top: 110px;
+    align-items: center;
+}
+
+.leftColumn {
+    flex: 2; /* ✅ Make left column bigger */
+    width: 70%; /* Adjust to make it even larger */
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1.8; /* ✅ Reduce right column size */
+    gap: 20px;
+}
+
+
+.infoRow {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+.label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.value {
+    text-align: right;
+}
+
+.overviewTitle {
+    color: var(--blue);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.overviewText {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.topCard {
+    display: flex;
+    gap: 20px;
+}
+.problemCard,
+.solutionCard {
+    border-radius: 20px;
+    background-color:#1E142F;
+    padding: 50px 40px;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.problemCard {
+    width: 580px;
+    height: 540px;
+}
+
+.solutionCard {
+    width: 880px;
+    height: 540px;
+}
+
+.svg {
+    z-index: 20;
+    position:relative;
+    top: -487.5px;
+    left: 50px;
+}
+
+.cardContent h2,
+.cardContent p {
+    position: relative;
+    z-index: 21;
+}
+
+
+.cardContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    z-index: 10;
+}
+
+
+.cardContent h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.cardContent p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.solutionSVG {
+    position: relative;
+    top: -730px;
+    z-index: 20;
+    left: 280px;
+}

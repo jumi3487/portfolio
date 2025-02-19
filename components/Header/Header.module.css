@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* White background */
   position: fixed;
   backdrop-filter: blur(8px);
   width: 100%;
   height: 70px;
+  margin-bottom: 110px;
+
 }
 
 .logo {

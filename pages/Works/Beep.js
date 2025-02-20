@@ -5,8 +5,23 @@ import Header from "../../components/Header";
 import styles from "../../styles/Beep.module.css";
 import Footer from "../../components/Footer";
 import Image from 'next/image';
+import BeepCarousel from "../../components/BeepCarousel";
+import { useRef } from "react";
 
 export default function Beep() {
+
+    // Create refs for each section
+    const personaRef = useRef(null);
+    const sitemapRef = useRef(null);
+    const styleGuideRef = useRef(null);
+    const wireframesRef = useRef(null);
+
+    // Function to handle smooth scrolling
+    const scrollToSection = (ref) => {
+      if (ref && ref.current) {
+        ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+  };
 
   return (
     <>
@@ -143,7 +158,7 @@ export default function Beep() {
           {/** Details of the projects**/}
 
           {/**  DEVELOPMENT PROCESS **/}
-          <div>
+          <div className={styles.developmentProcess}>
             <div className={styles.developProcessAgenda}>
               <div className={styles.developProcessCardContainer}>
                 <div className={styles.developProcessCard}>
@@ -163,7 +178,7 @@ export default function Beep() {
                 </svg>
               </div>
               <div className={styles.section}>
-                <section className={styles.sectionContainer}>
+                <section className={styles.sectionContainer} onClick={() => scrollToSection(personaRef)}>
                   <div className={styles.sectionNumber}>
                     <h3>01</h3>
                     <h3>User Personas</h3>
@@ -174,29 +189,29 @@ export default function Beep() {
                 </section>
                 <div className={styles.divide}></div>
 
-                <section className={styles.sectionContainer}>
+                <section className={styles.sectionContainer} onClick={() => scrollToSection(sitemapRef)}>
                   <div className={styles.sectionNumber}>
                     <h3>02</h3>
                     <h3>Sitemap</h3>
                   </div>
                   <div className={styles.sectionParagraph}>
-                    <p>Beep ensures a safer, more intuitive experience by tailoring features, design, and messaging to real user needs through user personas.</p>
+                    <p>Beep utilizes a sitemap to visualize key interactions and understand the user flow of the app interface for a seamless experience.</p>
                   </div>
                 </section>
                 <div className={styles.divide}></div>
 
-                <section className={styles.sectionContainer}>
+                <section className={styles.sectionContainer} onClick={() => scrollToSection(styleGuideRef)}>
                   <div className={styles.sectionNumber}>
                     <h3>03</h3>
                     <h3>Style Guide</h3>
                   </div>
                   <div className={styles.sectionParagraph}>
-                    <p>Beep utilizes a user journey map to visualize key interactions and understand the user flow of the app interface for a seamless experience.</p>
+                    <p>Beep utilizes a sitemap to visualize key interactions and understand the user flow of the app interface for a seamless experience.</p>
                   </div>
                 </section>
                 <div className={styles.divide}></div>
 
-                <section className={styles.sectionContainer}>
+                <section className={styles.sectionContainer} onClick={() => scrollToSection(wireframesRef)}>
                   <div className={styles.sectionNumber}>
                     <h3>04</h3>
                     <h3>Wireframes</h3>
@@ -206,6 +221,20 @@ export default function Beep() {
                   </div>
                 </section>
                 <div className={styles.divide}></div>
+              </div>
+            </div>
+            <div className={styles.projectsDevelopContainer}>
+              <div className={styles.persona} ref={personaRef}>
+                <BeepCarousel/>
+              </div>
+              <div className={styles.persona} ref={sitemapRef}>
+                <BeepCarousel/>
+              </div>
+              <div className={styles.persona} ref={styleGuideRef}>
+                <BeepCarousel/>
+              </div>
+              <div className={styles.persona} ref={wireframesRef}>
+                <BeepCarousel/>
               </div>
             </div>
           </div>

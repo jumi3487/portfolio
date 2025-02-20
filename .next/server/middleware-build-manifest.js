@@ -15,6 +15,11 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Draft": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Draft.js"
+    ],
     "/Works/Beep": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

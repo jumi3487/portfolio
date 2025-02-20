@@ -198,6 +198,11 @@
 }
 
 /******************************DEVELOPMENT PROCESS******************************/
+.developmentProcess {
+    display:flex;
+    flex-direction: column;
+    gap: 60px;
+}
 .developProcessAgenda {
     display: flex;
     width: 100%;
@@ -268,4 +273,20 @@
 
 .divide {
     border-bottom: solid 2px rgba(235, 235, 235, 0.50);
+}
+
+.projectsDevelopContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.persona {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    background: #1E142F;
+    padding: 140px;
+
 }

@@ -7,13 +7,19 @@
 }
 
 .container {
-    max-width: 80%;
+    max-width: 80vw;
     display: flex;
     flex-direction: column;
     gap: 110px;
     margin-top: 110px;
 
 
+}
+
+.image,
+.beepValueImg {
+    max-width: 80vw;
+    height: auto;
 }
 .title h1 {
     width: 80%;
@@ -219,11 +225,6 @@
     gap: 270px;
 
 }
-
-.developProcessCardContainer {
-    overflow: hidden;
-}
-
 .developProcessCard h2 {
     position: relative;
     z-index: 10;
@@ -245,8 +246,7 @@
 
 .sectionContainer {
     display: flex;
-    gap: 240px;
-    width: 940px;
+    max-width: 940px;
     justify-content: space-between;
 }
 
@@ -289,4 +289,19 @@
     background: #1E142F;
     padding: 140px;
 
+}
+
+.sitemap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    background: #1E142F;
+    padding: 50px;
+}
+
+.figma {
+    border-radius: 20px;
+    border: none;
 }

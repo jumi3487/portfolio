@@ -227,8 +227,8 @@ export default function Beep() {
               <div className={styles.persona} ref={personaRef}>
                 <BeepCarousel/>
               </div>
-              <div className={styles.persona} ref={sitemapRef}>
-                <BeepCarousel/>
+              <div className={styles.sitemap} ref={sitemapRef}>
+              <iframe className={styles.figma} width={1200} height={650} src="https://embed.figma.com/board/nAdsyGNJAdYsqGnXMTtiD7/Beep---Sitemap?node-id=0-1&embed-host=share" allowfullscreen></iframe>
               </div>
               <div className={styles.persona} ref={styleGuideRef}>
                 <BeepCarousel/>

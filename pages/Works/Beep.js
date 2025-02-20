@@ -7,6 +7,8 @@ import Footer from "../../components/Footer";
 import Image from 'next/image';
 import BeepCarousel from "../../components/BeepCarousel";
 import { useRef } from "react";
+import BeepStyleGuide from "../../components/BeepStyleGuide";
+import BeepFrames from "../../components/BeepFrames";
 
 export default function Beep() {
 
@@ -231,10 +233,10 @@ export default function Beep() {
               <iframe className={styles.figma} width={1200} height={650} src="https://embed.figma.com/board/nAdsyGNJAdYsqGnXMTtiD7/Beep---Sitemap?node-id=0-1&embed-host=share" allowfullscreen></iframe>
               </div>
               <div className={styles.persona} ref={styleGuideRef}>
-                <BeepCarousel/>
+                <BeepStyleGuide/>
               </div>
               <div className={styles.persona} ref={wireframesRef}>
-                <BeepCarousel/>
+                <BeepFrames/>
               </div>
             </div>
           </div>

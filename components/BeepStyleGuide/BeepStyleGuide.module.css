@@ -1,0 +1,15 @@
+.sliderWrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 58.584px;
+    height: 58.584px;
+    border-radius: 50px;
+    background-color: var(--white-30);
+    padding: 15px;
+    border: none;
+}

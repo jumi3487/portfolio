@@ -7,10 +7,12 @@
 }
 
 .container {
+    max-width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 110px;
     margin-top: 110px;
+
 
 }
 .title h1 {
@@ -49,7 +51,6 @@
     flex-direction: row;
     gap: 170px;
     width: 100%;
-    margin-top: 110px;
     align-items: center;
 }
 
@@ -65,11 +66,19 @@
     gap: 20px;
 }
 
+.rightColumnContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    gap: 20px;
+}
 
 .infoRow {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
+
     padding: 30px 0;
 }
 
@@ -80,6 +89,7 @@
 
 .value {
     text-align: right;
+    max-width: 300px;
 }
 
 .overviewTitle {
@@ -95,12 +105,37 @@
     line-height: 1.5;
 }
 
+.prototypeBtn {
+    width: 139px;
+    height: 40px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.prototypeBtn:hover {
+    background-color: var(--cornflowerblue);
+}
+
+
+.projectDetailsCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .topCard {
     display: flex;
     gap: 20px;
 }
 .problemCard,
-.solutionCard {
+.solutionCard,
+.developProcessCard {
     border-radius: 20px;
     background-color:#1E142F;
     padding: 50px 40px;
@@ -156,4 +191,81 @@
     top: -730px;
     z-index: 20;
     left: 280px;
+}
+
+.beepValueImg {
+    border-radius: 20px;
+}
+
+/******************************DEVELOPMENT PROCESS******************************/
+.developProcessAgenda {
+    display: flex;
+    width: 100%;
+    height: 509px;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.developProcessCard {
+    width: 430px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    gap: 270px;
+
+}
+
+.developProcessCardContainer {
+    overflow: hidden;
+}
+
+.developProcessCard h2 {
+    position: relative;
+    z-index: 10;
+    line-height: normal;
+}
+
+.developSVG {
+    position: relative;
+    z-index: 5;
+    top: -400px;
+    height: 635px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sectionContainer {
+    display: flex;
+    gap: 240px;
+    width: 940px;
+    justify-content: space-between;
+}
+
+.sectionContainer:hover {
+    color: var( --cornflowerblue);
+}
+
+.sectionNumber {
+    display: flex;
+    gap: 30px;
+
+}
+
+.sectionNumber h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sectionParagraph {
+    max-width: 45%;
+}
+
+.divide {
+    border-bottom: solid 2px rgba(235, 235, 235, 0.50);
 }

@@ -9,6 +9,7 @@ import BeepCarousel from "../../components/BeepCarousel";
 import { useRef } from "react";
 import BeepStyleGuide from "../../components/BeepStyleGuide";
 import BeepFrames from "../../components/BeepFrames";
+import BeepFunctions from "@/components/BeepFunctions";
 
 export default function Beep() {
 
@@ -241,6 +242,12 @@ export default function Beep() {
             </div>
           </div>
           {/**  DEVELOPMENT PROCESS **/}
+
+          {/**********  MAIN FEATURES ***********/}
+          < div className={styles.functions}>
+              <BeepFunctions/>
+          </div>
+          {/**********  MAIN FEATURES ***********/}
         </div>
         <Footer />
       </div>

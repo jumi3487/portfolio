@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 110px;
     align-items: center;
+    margin: auto;
 
 }
 
@@ -305,4 +306,12 @@
 .figma {
     border-radius: 20px;
     border: none;
+}
+
+.functions {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
 }

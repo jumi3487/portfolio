@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px 40px;
+    margin: 0 auto;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 25vw;
+    margin-right: 20px;
+    padding-top: 20px;
+
+}
+
+.title {
+    font-weight: 400;
+    color: var(--blue);
+    margin-bottom: 100px;
+    font-size: 45px;
+    padding-right: 20px;
+}
+
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.stepHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    width: 100%;
+}
+
+.step:hover {
+    background-color: rgba(0, 86, 255, 0.1);
+}
+
+.stepNumber {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cornflowerblue);
+    border-radius: 50%;
+    font-weight: bold;
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.stepTitle {
+    font-size: 25px;
+    font-weight: normal;
+    font-weight: 600;
+    color: var(--cornflowerblue);
+    transition: all 0.3s ease-in-out;
+}
+
+.activeStep {
+    max-width: 650px;
+    display: flex;
+    background-color: var(--blue);
+    color: var(--white);
+    gap: 20px;
+}
+
+.activeNumber {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.activeTitle {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.stepDescription {
+    font-size: 20px;
+    flex-wrap: wrap;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Image Container */
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 55%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 80px;
+}

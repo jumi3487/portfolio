@@ -20,20 +20,10 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/Draft.js"
     ],
-    "/Works": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Works.js"
-    ],
     "/Works/Beep": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Works/Beep.js"
-    ],
-    "/Works/Lunette": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Works/Lunette.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

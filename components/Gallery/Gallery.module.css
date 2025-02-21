@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    max-width: 1790px; /* Limits width of the whole gallery */
-    margin: auto; /* Centers everything */
+    max-width: 100%; /* Limits width of the whole gallery */
     overflow: hidden; /* Prevents content from spilling out */
 }
 
@@ -12,14 +11,14 @@
     display: grid;
     grid-template-columns: 0.8fr 0.8fr 1.4fr; /* First two images narrower */
     gap: 20px;
-    max-width: 1790px;
+    max-width: 100%;
 }
 
 .column2 {
     display: grid;
     grid-template-columns: 1.5fr 0.8fr; /* Bottom row layout */
     gap: 20px;
-    max-width: 1790px;
+    max-width: 100%;
 }
 
 /* Ensure all images stay inside their containers */

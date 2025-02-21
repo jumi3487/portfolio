@@ -4,5 +4,6 @@
   "/_document": "pages/_document.js",
   "/Works/Beep": "pages/Works/Beep.js",
   "/Draft": "pages/Draft.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/Works": "pages/Works.js"
 }

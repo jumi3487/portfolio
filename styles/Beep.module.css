@@ -368,3 +368,6 @@
     text-decoration: underline;
 }
 
+.carousel {
+    max-width: 50%;
+}

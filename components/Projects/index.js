@@ -28,7 +28,7 @@ export default function Projects(){
                     </div>
                     <div>
                       <Link href="/Works/Beep" passHref>
-                        <Image className={styles.projectsCardImg} src={'/images/beep-thumbnail-2.png'} alt="logo" width={800} height={533} />
+                        <Image className={styles.projectsCardImg} src={'/images/beep-thumbnail-2.png'} alt="logo" width={880} height={600} />
                       </Link>
                     </div>
                     <div className={styles.projectsInfo}>
@@ -55,7 +55,7 @@ export default function Projects(){
                     </div>
                     <div>
                       <Link href="/Works/ArtFlow" passHref>
-                        <Image className={styles.projectsCardImg} src={'/images/artflow-thumbnail-2.png'} alt="logo" width={800} height={533} />
+                        <Image className={styles.projectsCardImg} src={'/images/artflow-thumbnail-2.png'} alt="logo" width={880} height={600} />
                       </Link>
                     </div>
                     <div className={styles.projectsInfo}>
@@ -84,7 +84,7 @@ export default function Projects(){
                     </div>
                     <div>
                       <Link href="/Works/Lunette" passHref>
-                        <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
+                        <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={880} height={600} />
                       </Link>
                     </div>
                     <div className={styles.projectsInfo}>

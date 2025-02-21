@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 85%; /* Ensures it does not overflow */
+  width: 100vw; /* Ensures it does not overflow */
   padding: 50px 50px; /* Reduce padding */
   box-sizing: border-box; }/* Ensures padding does not exceed the container 
 

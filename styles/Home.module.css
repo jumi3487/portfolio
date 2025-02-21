@@ -15,11 +15,17 @@
   font-family: Helvetica, sans-serif;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pageContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100%; /* Ensures it does not overflow */
+  justify-content: center;
+  width: 85%; /* Ensures it does not overflow */
   padding: 50px 50px; /* Reduce padding */
   box-sizing: border-box; }/* Ensures padding does not exceed the container 
 
@@ -83,7 +89,7 @@
 
 .sectionTwo {
   width: 100%; /* Make sure it stays inside the parent */
-  max-width: 1791px;
+  max-width: 80vw;
   
 
 }
@@ -207,5 +213,4 @@ line-height: normal;
   color: var(--white);
   font-family: Helvetica;
 }
-
 

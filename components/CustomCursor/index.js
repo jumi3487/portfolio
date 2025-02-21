@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 
 const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0, hover: false });
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [hoverType, setHoverType] = useState(null); // Tracks hover state
 
   useEffect(() => {
     const updatePosition = (e) => {
-      const isHovering = e.target.closest("a, button"); // Check if hovering over clickable elements
-      setPosition({ x: e.clientX, y: e.clientY, hover: !!isHovering });
+      const hoverTarget = e.target.closest("[data-cursor]"); // Check for elements with 'data-cursor' attribute
+      const cursorType = hoverTarget ? hoverTarget.getAttribute("data-cursor") : null;
+
+      setPosition({ x: e.clientX, y: e.clientY });
+      setHoverType(cursorType);
     };
 
     window.addEventListener("mousemove", updatePosition);
@@ -27,6 +31,8 @@ const CustomCursor = () => {
         zIndex: 9999,
       }}
     >
+      {/* Default Cursor */}
+      {!hoverType && (
         <svg width="36" height="36" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_748_1278)">
                 <path d="M23.9999 20C24.1999 20 24.4999 19.8 24.6999 19.7C26.2999 18.7 26.4999 16.5 25.4999 15.2C24.6999 14.2 23.2999 13.7 22.0999 14.1C22.2999 8.49996 17.7999 1.69996 11.7999 0.59996C11.4999 0.59996 5.69991 -0.50004 2.39991 3.59996C-1.20009 7.99996 1.59991 14.2 1.79991 14.5C4.09991 19.3 9.89991 22.2 14.7999 21.7C14.5999 22.4 14.5999 23.2 14.9999 23.9C15.7999 25.5 17.8999 26.1 19.3999 25.2C19.9999 24.8 20.3999 24.3 20.5999 23.6C21.2999 23.7 22.0999 23.6 22.7999 23.2C23.8999 22.5 24.3999 21.1 24.1999 19.9L23.9999 20Z" fill="#F4C592" stroke="#CE944E" stroke-width="0.9" stroke-miterlimit="10"/>
@@ -53,6 +59,21 @@ const CustomCursor = () => {
                 </clipPath>
             </defs>
         </svg>
+      )}
+
+      {/* Hovered over Button - Change Cursor */}
+      {hoverType === "button" && (
+        <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.7992 1.2002H13.5992C6.47475 1.2002 0.699219 6.97572 0.699219 14.1002C0.699219 21.2247 6.47475 27.0002 13.5992 27.0002H16.7992C23.9237 27.0002 29.6992 21.2247 29.6992 14.1002C29.6992 6.97572 23.9237 1.2002 16.7992 1.2002Z" fill="#F16842" stroke="#CE5639" stroke-width="0.8" stroke-miterlimit="10"/>
+        </svg>
+      )}
+
+      {/* Hovered over Link - Different Cursor */}
+      {hoverType === "link" && (
+        <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.7992 1.2002H13.5992C6.47475 1.2002 0.699219 6.97572 0.699219 14.1002C0.699219 21.2247 6.47475 27.0002 13.5992 27.0002H16.7992C23.9237 27.0002 29.6992 21.2247 29.6992 14.1002C29.6992 6.97572 23.9237 1.2002 16.7992 1.2002Z" fill="#F16842" stroke="#CE5639" stroke-width="0.8" stroke-miterlimit="10"/>
+        </svg>
+      )}
     </div>
   );
 };

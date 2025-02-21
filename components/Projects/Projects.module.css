@@ -1,10 +1,7 @@
 
 .sectionTwo {
     width: 100%; /* Make sure it stays inside the parent */
-    max-width: 1791px;
-    
-  
-  }
+}
   .sectionTwoContainer {
     display: flex;
     flex-direction: column;
@@ -53,7 +50,7 @@
   }
   
   .projectsTitle h3{
-    width: 280px;
+    max-width: 400px;
     color: var(--black);
     /* Helvetica_Reg_40 */
     font-family: Helvetica;
@@ -70,10 +67,11 @@
   }
   .projectsContent {
     display: flex;
-    width: 280px;
+    max-width: 400px;
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
+    text-align: justify;
   }
   
   .projectsContentButton {
@@ -93,4 +91,8 @@
   
   .projectsContentButton:hover {
     background: var(--cornflowerblue);
+  }
+
+  .link {
+    text-decoration: none;
   }

@@ -39,7 +39,7 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer and Frontend Developer
                         </p>
                       </div>
-                      <Link href="/Works/Beep" passHref>
+                      <Link  className={styles.link} href="/Works/Beep" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
                       </Link>
                     </div>
@@ -66,7 +66,7 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer, UX/UI Designer and Frontend Developer
                         </p>
                       </div>
-                      <Link href="/Works/ArtFlow" passHref>
+                      <Link className={styles.link} href="/Works/ArtFlow" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
                       </Link>
                     </div>
@@ -95,7 +95,7 @@ export default function Projects(){
                         <strong>My role:</strong> UX/UI Designer
                         </p>
                       </div>
-                      <Link href="/Works/Lunette" passHref>
+                      <Link className={styles.link} href="/Works/Lunette" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
                       </Link>
                     </div>

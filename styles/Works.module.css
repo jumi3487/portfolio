@@ -6,15 +6,13 @@
 }
 
 .container {
-  max-width: 1485px;
   width: 100%;
   height:auto;
   display:flex;
   flex-direction: column;
   gap: 100px;
-  margin-top: 110px;
-  margin-left: 130px;
-  margin-right: 120px;
+  margin-top: 200px;
+  align-items: center;
 }
 
 .header {
@@ -72,3 +70,24 @@
   align-items: center;
   justify-content: center;
 }
+
+
+@media screen and (max-width: 1512px) {
+  .image {
+    max-width: 60%; /* Reduce image width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Prevents stretching */
+  }
+
+  .cardContainer {
+    justify-content: center; /* Ensures images are centered */
+    gap: 20px; /* Adds spacing */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    max-width: 80%;
+  }
+}
+

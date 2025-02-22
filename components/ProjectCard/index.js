@@ -1,24 +1,28 @@
+import projects from "../../data/projects"
 import styles from '../ProjectCard/ProjectCard.module.css';
 import Image from "next/image";
-import projects from "../../data/projects"
 
-export default function ProjectCard({ image, width, height, alt, name, date, id }) {
+export default function ProjectCard({ image, width, height, name, date }) {
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.projectCard}>
+      {/* Image */}
       <Image
         src={image}
-        alt={alt}
+        alt={name}
         width={width}
         height={height}
-        className={styles.projectCard}
-        id={id}
+        className={styles.projectImage}
       />
+
+      {/* Overlay for hover effect */}
       <div className={styles.overlay}></div>
-      
+
+      {/* Caption (Title & Date) */}
       <div className={styles.captionContainer}>
         <h3>{name}</h3>
-        <p >{date}</p>
+        <p>{date}</p>
       </div>
     </div>
   );
 }
+

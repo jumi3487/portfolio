@@ -30,37 +30,40 @@ export default function Works() {
 
         {/* Title Section */}
         <div className={styles.container}>
-          <section>
-            <h1 className={styles.header}>Works</h1>
-            <div className={styles.filters}>
-              {categories.map((category, index) => (
-                <span key={category}>
-                  <button
-                    className={selectedCategory === category ? styles.activeButton : styles.button}
-                    onClick={() => setSelectedCategory(category)}
-                  >
-                    {category}
-                  </button>
-                  {index !== categories.length - 1 && <span> / </span>} 
-                </span>
-              ))}
-            </div>
-          </section>
+          <div>
+            <section>
+              <h1 className={styles.header}>Works</h1>
+              <div className={styles.filters}>
+                {categories.map((category, index) => (
+                  <span key={category}>
+                    <button
+                      className={selectedCategory === category ? styles.activeButton : styles.button}
+                      onClick={() => setSelectedCategory(category)}
+                    >
+                      {category}
+                    </button>
+                    {index !== categories.length - 1 && <span> / </span>} 
+                  </span>
+                ))}
+              </div>
+            </section>
 
-          {/* Project Grid */}
-          <section className={styles.cardContainer}>
-            {filteredProjects.map((project) => (
-              <Link href={`/Works/${project.title}`} key={project.id} passHref>
-              <ProjectCard
-                image={project.image}
-                width={project.width}
-                height={project.height}
-                name={project.name}
-                date={project.date}
-              />
-            </Link>
-            ))}
-          </section>
+            {/* Project Grid */}
+            <section className={styles.cardContainer}>
+              {filteredProjects.map((project) => (
+                <Link href={`/Works/${project.title}`} key={project.id} passHref>
+                <ProjectCard
+                  image={project.image}
+                  name={project.name}
+                  date={project.date}
+                  width={project.width * 0.8} // Adjust dynamically
+                  height={project.height * 0.8}
+                  className={styles.image}
+                />
+              </Link>
+              ))}
+            </section>
+          </div>
         </div>
       </div>
       <Footer/>

@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/Draft": "pages/Draft.js",
   "/": "pages/index.js",
+  "/Works/ArtFlow": "pages/Works/ArtFlow.js",
   "/Works": "pages/Works.js"
 }

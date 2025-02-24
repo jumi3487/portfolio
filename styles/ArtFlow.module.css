@@ -1,0 +1,268 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    align-items: center;
+    margin: auto;
+
+}
+
+.container {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    margin-top: 110px;
+}
+
+.image,
+.beepValueImg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.title h1 {
+    width: 80%;
+    position: relative;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title span {
+    color: var(--blue);
+}
+
+.image {
+    border-radius: 20px;
+}
+
+/******************   OVERVIEW ********************/
+
+.infoContainer {
+    max-width: 100vw;
+}
+
+.overviewContainer {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+    align-items: center;
+}
+
+.leftColumn {
+    flex: 2; /* ✅ Make left column bigger */
+    width: 70%; /* Adjust to make it even larger */
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1.8; /* ✅ Reduce right column size */
+    gap: 20px;
+}
+
+.rightColumnContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    gap: 20px;
+}
+
+.rightColumnContent a {
+    text-decoration: none;
+}
+
+.infoRow {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+.label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.value {
+    text-align: right;
+    max-width: 60%;
+}
+
+.overviewTitle {
+    color: var(--blue);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.overviewText {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.overviewBtn {
+    display: flex;
+    gap: 20px;
+}
+
+.prototypeBtn {
+    width: 139px;
+    height: 40px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+}
+
+.prototypeBtn:hover {
+    background-color: var(--cornflowerblue);
+}
+/******************   OVERVIEW ********************/
+
+.projectDetails {
+    display: flex;
+    gap: 85px;
+}
+
+.projectDetailsContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.projectDetailsContent h2 {
+    color: var(--blue);
+    text-align: right;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.projectDetailsContent p {
+    color: var(--black);
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/**********************/
+
+.developProcessImage {
+    width: 960px;
+    height: 470px;
+    flex-shrink: 0;
+    aspect-ratio: 96/47;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.artflowimage {
+    width: 960px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.developmentProcess {
+    display:flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.developProcessAgenda {
+    display: flex;
+    width: 100%;
+    height: 509px;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.developProcessCard {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 270px;
+
+}
+.developProcessCard h2 {
+    position: relative;
+    z-index: 10;
+    line-height: normal;
+}
+
+.developSVG {
+    position: relative;
+    z-index: 5;
+    top: -400px;
+    height: 635px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100vw;
+}
+
+.sectionContainer {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.sectionContainer:hover {
+    color: var( --cornflowerblue);
+}
+
+.sectionNumber {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.sectionNumber h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sectionParagraph {
+    max-width: 60%;
+}
+
+.divide {
+    border-bottom: solid 2px rgba(235, 235, 235, 0.50);
+}
+
+.projectsDevelopContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

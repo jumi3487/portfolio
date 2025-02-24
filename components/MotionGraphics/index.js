@@ -5,13 +5,13 @@ const motionGraphics = [
   {
     id: "01",
     title: "How To Make French Fries?",
-    image: "/images/french-fries-thumbnail.png",
+    image: "/images/french-fries.png",
     views: 165, // Number above arrow
   },
   {
     id: "02",
     title: "Five Layers of Ocean",
-    image: "/images/ocean-layers-thumbnail.png",
+    image: "/images/five-layers.png",
     views: null, // No number for this one
   },
 ];
@@ -36,7 +36,7 @@ export default function MotionGraphics() {
               </button>
             </div>
             <div className={styles.motionGraphicProjects}>
-                <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
+                <Image className={styles.projectsCardImg} src={'/images/french-fries.png'} alt="logo" width={800} height={533} />
                 <div className={styles.ProjectInfo}>
                 <h1 className={styles.motionGraphicProjectsh1}>01</h1>
                 <h2 className={styles.motionGraphicProjectsh2}>How To Make French Fries?</h2>
@@ -46,7 +46,7 @@ export default function MotionGraphics() {
                     {/*Motion Graphic 1*/}
                     {/*Motion Graphic 2*/}
             <div className={styles.motionGraphicProjects2}>
-                    <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={800} height={533} />
+                    <Image className={styles.projectsCardImg} src={'/images/five-layers.png'} alt="logo" width={800} height={533} />
                     <div className={styles.ProjectInfo2}>
                     <h1 className={styles.motionGraphicProjectsh1}>02</h1>
                     <h2 className={styles.motionGraphicProjectsh2}>Five Layers Of Ocean</h2>

@@ -243,6 +243,7 @@
     gap: 50px;
     justify-content: space-between;
     width: 100%;
+    text-align: right;
 
 }
 
@@ -265,4 +266,33 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+}
+
+.artflowSlogan img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.projectsDevelopContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.persona,
+.sitemap {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #141414;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.figma {
+    border-radius: 20px;
+    width: 88%;
 }

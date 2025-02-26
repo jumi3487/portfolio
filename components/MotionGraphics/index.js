@@ -36,7 +36,7 @@ export default function MotionGraphics() {
               </button>
             </div>
             <div className={styles.motionGraphicProjects}>
-                <Image className={styles.projectsCardImg} src={'/images/french-fries.png'} alt="logo" width={800} height={533} />
+                <img className={styles.projectsCardImg} src={'/images/french-fries.png'} alt="thumbnail" />
                 <div className={styles.ProjectInfo}>
                 <h1 className={styles.motionGraphicProjectsh1}>01</h1>
                 <h2 className={styles.motionGraphicProjectsh2}>How To Make French Fries?</h2>
@@ -46,7 +46,7 @@ export default function MotionGraphics() {
                     {/*Motion Graphic 1*/}
                     {/*Motion Graphic 2*/}
             <div className={styles.motionGraphicProjects2}>
-                    <Image className={styles.projectsCardImg} src={'/images/five-layers.png'} alt="logo" width={800} height={533} />
+                    <img className={styles.projectsCardImg} src={'/images/five-layers.png'} alt="thumbnail" />
                     <div className={styles.ProjectInfo2}>
                     <h1 className={styles.motionGraphicProjectsh1}>02</h1>
                     <h2 className={styles.motionGraphicProjectsh2}>Five Layers Of Ocean</h2>

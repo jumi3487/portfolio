@@ -5,6 +5,10 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ArtFlowFunctions from "../../components/ArtFlowFunctions";
+import ArtFlowCarousel from "../../components/ArtFlowCarousel";
+import ArtFlowStyleGuide from "../../components/ArtFlowStyleGuide";
+import ArtFlowFrames from "@/components/ArtFlowFrames";
+
 
 export default function ArtFlow(){
     // Create refs for each section
@@ -108,51 +112,69 @@ export default function ArtFlow(){
                 <div>
                     <ArtFlowFunctions/>
                 </div>
-
+                    <div className={styles.artflowSlogan}>
+                        <img
+                            src="/images/artflow/artflow-2.png" 
+                            alt="ArtFlow Slogan"
+                        />
+                    </div>
                 {/**  DEVELOPMENT PROCESS **/}
                 <div className={styles.developmentProcess}>
                     <div className={styles.developProcessAgenda}>
                         <div className={styles.section}>
                             <section className={styles.sectionContainer} onClick={() => scrollToSection(personaRef)}>
-                            <div className={styles.sectionNumber}>
-                                <h3>01</h3>
-                                <h3>User Personas</h3>
-                            </div>
+                                <div className={styles.sectionNumber}>
+                                    <h3>01</h3>
+                                    <h3>User Personas</h3>
+                                </div>
                             </section>
                             <div className={styles.divide}></div>
 
                             <section className={styles.sectionContainer} onClick={() => scrollToSection(sitemapRef)}>
-                            <div className={styles.sectionNumber}>
-                                <h3>02</h3>
-                                <h3>Sitemap</h3>
-                            </div>
+                                <div className={styles.sectionNumber}>
+                                    <h3>02</h3>
+                                    <h3>Sitemap</h3>
+                                </div>
                             </section>
                             <div className={styles.divide}></div>
 
                             <section className={styles.sectionContainer} onClick={() => scrollToSection(styleGuideRef)}>
-                            <div className={styles.sectionNumber}>
-                                <h3>03</h3>
-                                <h3>Style Guide</h3>
-                            </div>
+                                <div className={styles.sectionNumber}>
+                                    <h3>03</h3>
+                                    <h3>Style Guide</h3>
+                                </div>
                             </section>
                             <div className={styles.divide}></div>
 
                             <section className={styles.sectionContainer} onClick={() => scrollToSection(wireframesRef)}>
-                            <div className={styles.sectionNumber}>
-                                <h3>04</h3>
-                                <h3>Wireframes</h3>
-                            </div>
+                                <div className={styles.sectionNumber}>
+                                    <h3>04</h3>
+                                    <h3>Wireframes</h3>
+                                </div>
                             </section>
                             <div className={styles.divide}></div>
                         </div>
+
                         <div className={styles.developProcessImage}>
-                            <Image 
+                            <img
                                 src="/images/artflow/3.png" 
-                                width={4000} 
-                                height={3000} 
                                 alt="ArtFLow Mockup"
                                 className={styles.artflowimage}
                             />
+                        </div>
+                    </div>
+                    <div className={styles.projectsDevelopContainer}>
+                        <div className={styles.persona} ref={personaRef}>
+                            <ArtFlowCarousel className={styles.carousel}/>
+                        </div>
+                        <div className={styles.sitemap} ref={sitemapRef}>
+                            <iframe className={styles.figma} width="800" height="450" src="https://embed.figma.com/design/zMScRDRPTRULIk1omsiy6J/ArtFlow---Sitemap?node-id=0-1&m=dev&embed-host=share" allowfullscreen></iframe>
+                        </div>
+                        <div className={styles.persona} ref={styleGuideRef}>
+                            <ArtFlowStyleGuide className={styles.carousel}/>
+                        </div>
+                        <div className={styles.persona} ref={wireframesRef}>
+                            <ArtFlowFrames className={styles.carousel}/>
                         </div>
                     </div>
                 </div>

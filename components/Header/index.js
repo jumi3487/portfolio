@@ -21,7 +21,7 @@ export default function Header() {
                         </Link>
                     </section>
                     <section>
-                        <Link href="/Works" passHref className={styles.link}>
+                        <Link href="/Work" passHref className={styles.link}>
                             <p className={router.pathname === "/Work" ? styles.active : ""}>Work</p>
                         </Link>
                     </section>
@@ -35,6 +35,7 @@ export default function Header() {
                             <p className={router.pathname === "/contacts" ? styles.active : ""}>Contacts</p>
                         </Link>
                     </section>
+                    
                 </div>
             </div>
         </>

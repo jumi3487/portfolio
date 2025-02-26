@@ -29,11 +29,9 @@ export default function GraphicDesigns() {
           {graphicDesigns.map((project, index) => (
             <Link key={index} href={project.href} passHref>
               <div className={styles.card}>
-                <Image
+                <img
                   src={project.src}
                   alt={project.alt}
-                  width={870}
-                  height={510}
                   className={styles.image}
                 />
               </div>

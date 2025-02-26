@@ -54,7 +54,7 @@
     color: var(--black);
     /* Helvetica_Reg_40 */
     font-family: Helvetica;
-    font-size: 40px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -95,4 +95,16 @@
 
   .link {
     text-decoration: none;
+  }
+
+  .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1512px){
+    .projectsTitle h3 {
+      font-size: 40px;
+    }
   }

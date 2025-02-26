@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function ArtFlowCarousel(){
     const images = [
-        "/images/beep/Persona1.png",
-        "/images/beep/Persona2.png",
+        "/images/artflow/Persona1.png",
+        "/images/artflow/Persona2.png",
       ];
     
       const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,10 +39,8 @@ export default function ArtFlowCarousel(){
                 </button>
             </div>
             <div className={styles.ImageWrapper}>
-                <Image 
+                <img
                     src={images[currentIndex]}
-                    width={1170} 
-                    height={731} 
                     alt={`Persona ${currentIndex + 1}`}
                     className={styles.image}
                 />

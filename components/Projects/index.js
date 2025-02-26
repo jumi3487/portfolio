@@ -26,10 +26,10 @@ export default function Projects(){
                       <h3>Beep</h3>
                       <h3>Sep – Dec<br/>2024</h3>
                     </div>
-                    <div>
-                      <Link href="/Work/Beep" passHref>
+                    <div className={styles.thumbnail}>
+                      <a className={styles.link} href="/Work/Beep" passHref>
                         <Image className={styles.projectsCardImg} src={'/images/beep-thumbnail-2.png'} alt="logo" width={880} height={600} />
-                      </Link>
+                      </a>
                     </div>
                     <div className={styles.projectsInfo}>
                       <div className={styles.projectsContent}>
@@ -39,9 +39,9 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer and Frontend Developer
                         </p>
                       </div>
-                      <Link  className={styles.link} href="/Work/Beep" passHref>
+                      <a className={styles.link} href="/Work/Beep" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
-                      </Link>
+                      </a>
                     </div>
                   {/*Section Two - Projects - Beep*/}
                 </div>
@@ -53,10 +53,10 @@ export default function Projects(){
                       <h3>ArtFlow</h3>
                       <h3>Jan – May<br/>2024</h3>
                     </div>
-                    <div>
-                      <Link href="/Work/ArtFlow" passHref>
+                    <div className={styles.thumbnail}>
+                      <a className={styles.link} href="/Work/ArtFlow" passHref>
                         <Image className={styles.projectsCardImg} src={'/images/artflow-thumbnail-2.png'} alt="logo" width={880} height={600} />
-                      </Link>
+                      </a>
                     </div>
                     <div className={styles.projectsInfo}>
                       <div className={styles.projectsContent}>
@@ -66,9 +66,9 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer, UX/UI Designer and Frontend Developer
                         </p>
                       </div>
-                      <Link className={styles.link} href="/Work/ArtFlow" passHref>
+                      <a className={styles.link} href="/Work/ArtFlow" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
-                      </Link>
+                      </a>
                     </div>
                     {/*Section Two - Projects - ArtFlow*/}
                   </div>
@@ -82,10 +82,10 @@ export default function Projects(){
                       <h3>Lunette</h3>
                       <h3>Nov – Dec<br/>2023</h3>
                     </div>
-                    <div>
-                      <Link href="/Work/Lunette" passHref>
+                    <div className={styles.thumbnail}>
+                      <a className={styles.link} href="/Work/Lunette" passHref>
                         <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={880} height={600} />
-                      </Link>
+                      </a>
                     </div>
                     <div className={styles.projectsInfo}>
                       <div className={styles.projectsContent}>
@@ -95,9 +95,9 @@ export default function Projects(){
                         <strong>My role:</strong> UX/UI Designer
                         </p>
                       </div>
-                      <Link className={styles.link} href="/Work/Lunette" passHref>
+                      <a className={styles.link} href="/Work/Lunette" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
-                      </Link>
+                      </a>
                     </div>
                     {/*Section Two - Projects - Lunette*/}
                 </div>

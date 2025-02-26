@@ -1,4 +1,4 @@
-import styles from "../ArtFlowFrames/ArtFlowFrames.module.css";
+import styles from "./ArtFLowFrames.module.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 

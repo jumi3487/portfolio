@@ -1,4 +1,4 @@
-import styles from "../ArtFlowCarousel/ArtFlowCarousel.module.css";
+import styles from "./ArtFlowCarousel.module.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 

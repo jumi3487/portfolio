@@ -1,4 +1,4 @@
-import styles from "../ArtFlowStyleGuide/ArtFlowStyleGuide.module.css";
+import styles from "./ArtFlowStyleGuide.module.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 

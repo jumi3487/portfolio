@@ -4,11 +4,11 @@ import projects from "../../data/projects";
 import Header from "../../components/Header";
 import ProjectCard from "../../components/ProjectCard";
 import Image from "next/image";
-import styles from "../../styles/Works.module.css";
+import styles from "../../styles/Work.module.css";
 import Footer from "../../components/Footer";
 import Link from 'next/link';
 
-export default function Works() {
+export default function Work() {
   const [selectedCategory, setSelectedCategory] = useState("Projects");
 
   const categories = ["Projects", "Graphic Designs", "Motion Graphics", "Others"];
@@ -51,7 +51,7 @@ export default function Works() {
             {/* Project Grid */}
             <section className={styles.cardContainer}>
               {filteredProjects.map((project) => (
-                <Link href={`/Works/${project.title}`} key={project.id} passHref>
+                <Link href={`/Work/${project.title}`} key={project.id} passHref>
                 <ProjectCard
                   image={project.image}
                   name={project.name}

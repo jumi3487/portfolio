@@ -22,7 +22,7 @@ export default function Header() {
                     </section>
                     <section>
                         <Link href="/Works" passHref className={styles.link}>
-                            <p className={router.pathname === "/Works" ? styles.active : ""}>Works</p>
+                            <p className={router.pathname === "/Work" ? styles.active : ""}>Work</p>
                         </Link>
                     </section>
                     <section>

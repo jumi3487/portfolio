@@ -16,17 +16,19 @@ export default function Illustration() {
         {/* Navbar */}
         <Header />
         <div className={styles.container}>
-          <h1>Graphic Designs / <span>Sparkly</span></h1>
-
-          <div className={styles.overviewContainer}>
+          <div className={styles.title}>
+            <h1>Graphic Designs / <span>Sparkly</span></h1>
+          </div>
+          <div>
             <Image 
-              src="/images/sparkly/sparkly_big.png" 
-              width={1500} 
-              height={1039} 
-              alt="Mechanic Illustration Big"
-              className={styles.image}
-            />
-
+                src="/images/sparkly/sparkly-thumbnail.png" 
+                width={1500} 
+                height={1039} 
+                alt="Mechanic Illustration Big"
+                className={styles.image}
+              />
+          </div>
+          <div className={styles.overviewContainer}>
             {/* ✅ Wrapped Left & Right sections inside `infoContainer` */}
             <div className={styles.infoContainer}>
               <div className={styles.overview}>
@@ -59,28 +61,89 @@ export default function Illustration() {
           </div>
 
           {/* ✅ Wrapped details images in a flex container */}
-        <div className={styles.detailsContainer}>
-          <div>
-          <p> Real Object Image </p>
-          <Image 
-              src="/images/mechanic-illustration/real-object.png" 
-              width={481} 
-              height={481} 
-              alt="Illustration Detail 1"
-              className={styles.image}
-            />
+            <div className={styles.detailsContainer}>
+              <div className={styles.imageWrapper}>
+                <div className={styles.dielineContainer}>
+                  <div className={styles.dieline}>
+                    <div className={styles.characterImg}>
+                      <img
+                      src="/images/sparkly/tomato1.png" 
+                      alt="Tomato Character"
+                      />
+                    </div>
+                    <div className={styles.dielineImg}>
+                      <img
+                      src="/images/sparkly/tomato2.png"  
+                      alt="Tomato Dieline"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className={styles.dieline}>
+                      <div className={styles.characterImg}>
+                        <img 
+                        src="/images/sparkly/pine1.png" 
+                        alt="Pineapple Character"
+                        />
+                      </div>
+                      <div className={styles.dielineImg}>
+                        <img 
+                        src="/images/sparkly/pine2.png" 
+                        alt="Pineapple Dieline"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className={styles.dieline}>
+                      <div className={styles.characterImg}>
+                        <img 
+                        src="/images/sparkly/steen1.png" 
+                        alt="Pineapple Character"
+                        />
+                      </div>
+                      <div className={styles.dielineImg}>
+                        <img 
+                        src="/images/sparkly/steen2.png" 
+                        alt="Pineapple Dieline"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.mockupContainer}>
+                  <div className={styles.mockup}>
+                      <div className={styles.mockupImg}>
+                        <img 
+                          src="/images/sparkly/mockup2.png" 
+                          alt="Tomato Character"
+                          
+                        />
+                      </div>
+                      <div className={styles.mockupImg}>
+                        <img 
+                          src="/images/sparkly/tomato.png" 
+                          alt="Tomato Character"
+                        />
+                      </div>
+                  </div>
+                    <div className={styles.mockup}>
+                      <div className={styles.mockupImg}>
+                          <img 
+                            src="/images/sparkly/mockup3.png" 
+                            alt="Tomato Character"
+                          />
+                      </div>
+                        <div className={styles.mockupImg}>
+                          <img 
+                            src="/images/sparkly/mockup4.png" 
+                            alt="Tomato Character"
+                          />
+                        </div>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div>
-             <p> Illustration  </p>
-            <Image 
-              src="/images/mechanic-illustration/mechanic-illustration.png" 
-              width={695} 
-              height={481} 
-              alt="Illustration Detail 2"
-              className={styles.image}
-            />
-            </div>
-        </div>
         </div>
         <Footer />
       </div>

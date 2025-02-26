@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const graphicDesigns = [
-    { src: "/images/illustration-thumbnail-3.png", alt: "Illustration of a Japanese Café", href: "/Works/Illustration" },
-    { src: "/images/mechanic-illustration-thumbnail-3.png", alt: "Coffee Maker Product Render", href: "/Works/MechanicIllustration" },
-    { src: "/images/sparkly-thumbnail-3.png", alt: "Sparkly Soda Can Packaging", href: "/Works/Sparkly" },
-    { src: "/images/menu-thumbnail-3.png", alt: "Savoria Bistro Menu Design", href: "/pages/Works/MenuDesign" },
+    { src: "/images/illustration-thumbnail-3.png", alt: "Illustration of a Japanese Café", href: "/Work/Illustration" },
+    { src: "/images/mechanic-illustration-thumbnail-3.png", alt: "Coffee Maker Product Render", href: "/Work/MechanicIllustration" },
+    { src: "/images/sparkly-thumbnail-3.png", alt: "Sparkly Soda Can Packaging", href: "/Work/Sparkly" },
+    { src: "/images/menu-thumbnail-3.png", alt: "Savoria Bistro Menu Design", href: "/pages/Work/MenuDesign" },
 ];
 
 export default function GraphicDesigns() {

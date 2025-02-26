@@ -27,7 +27,7 @@ export default function Projects(){
                       <h3>Sep – Dec<br/>2024</h3>
                     </div>
                     <div>
-                      <Link href="/Works/Beep" passHref>
+                      <Link href="/Work/Beep" passHref>
                         <Image className={styles.projectsCardImg} src={'/images/beep-thumbnail-2.png'} alt="logo" width={880} height={600} />
                       </Link>
                     </div>
@@ -39,7 +39,7 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer and Frontend Developer
                         </p>
                       </div>
-                      <Link  className={styles.link} href="/Works/Beep" passHref>
+                      <Link  className={styles.link} href="/Work/Beep" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
                       </Link>
                     </div>
@@ -54,7 +54,7 @@ export default function Projects(){
                       <h3>Jan – May<br/>2024</h3>
                     </div>
                     <div>
-                      <Link href="/Works/ArtFlow" passHref>
+                      <Link href="/Work/ArtFlow" passHref>
                         <Image className={styles.projectsCardImg} src={'/images/artflow-thumbnail-2.png'} alt="logo" width={880} height={600} />
                       </Link>
                     </div>
@@ -66,7 +66,7 @@ export default function Projects(){
                         <strong>My role:</strong> Lead Digital Designer, UX/UI Designer and Frontend Developer
                         </p>
                       </div>
-                      <Link className={styles.link} href="/Works/ArtFlow" passHref>
+                      <Link className={styles.link} href="/Work/ArtFlow" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
                       </Link>
                     </div>
@@ -83,7 +83,7 @@ export default function Projects(){
                       <h3>Nov – Dec<br/>2023</h3>
                     </div>
                     <div>
-                      <Link href="/Works/Lunette" passHref>
+                      <Link href="/Work/Lunette" passHref>
                         <Image className={styles.projectsCardImg} src={'/images/lunette-thumbnail.png'} alt="logo" width={880} height={600} />
                       </Link>
                     </div>
@@ -95,7 +95,7 @@ export default function Projects(){
                         <strong>My role:</strong> UX/UI Designer
                         </p>
                       </div>
-                      <Link className={styles.link} href="/Works/Lunette" passHref>
+                      <Link className={styles.link} href="/Work/Lunette" passHref>
                         <button className={styles.projectsContentButton}>Learn more</button>
                       </Link>
                     </div>

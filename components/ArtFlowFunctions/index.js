@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from "../ArtFlowFunctions/ArtFlowFunctions.module.css"
+import styles from "./ArtFlowFunctions.module.css"
 
 export default function ArtFlowFunctions() {
     const [activeScreen, setActiveScreen] = useState(1);

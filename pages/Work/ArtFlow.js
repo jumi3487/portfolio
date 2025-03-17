@@ -73,7 +73,7 @@ export default function ArtFlow(){
                                     with ideas and improve their workflow. With an attractive yet simple design,
                                     its interface is smooth and free of distractions. 
                                     The <strong>AI</strong> allows users to input their ideas 
-                                    and <strong>generate prompts</strong> that <strong>enhance creativity</strong>. <strong>ArtFlow</strong> makes digital art 
+                                    and <strong>generate prompts</strong> that <strong>enhance creativity</strong>. <strong>ArtFlow</strong> makes digital art&nbsp;
                                     <strong>easier and more efficient</strong> for both beginners and professionals.
                                 </p>
                                 <div className={styles.overviewBtn}>

@@ -85,7 +85,7 @@ const projects = [
   // 🔹 Motion Graphics
   {
     id: 8,
-    title: "HowToMakeFrenchFries?",
+    title: "FrenchFries",
     name: "How To Make French Fries?",
     date: "February - March 2024",
     image: "/images/french-fries.png",

@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/Work/ArtFlow": "pages/Work/ArtFlow.js",
   "/Work/MenuDesign": "pages/Work/MenuDesign.js",
-  "/Work/ArtFlow": "pages/Work/ArtFlow.js"
+  "/": "pages/index.js"
 }

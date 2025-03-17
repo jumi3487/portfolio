@@ -26,6 +26,45 @@ export default function MenuDesign(){
                         className={styles.image}
                     />
                 </div>
+                <div className={styles.overviewContainer}>
+                {/* ✅ Wrapped Left & Right sections inside `infoContainer` */}
+                <div className={styles.infoContainer}>
+                <div className={styles.overview}>
+                    {/* Left Column */}
+                    <div className={styles.leftColumn}>
+                    <div className={styles.infoRow}>
+                        <p className={styles.label}>TIMELINE</p>
+                        <p className={styles.value}>3 Weeks</p>
+                    </div>
+                    <div className={styles.infoRow}>
+                        <p className={styles.label}>ROLE</p>
+                        <p className={styles.value}>Graphic Designer</p>
+                    </div>
+                    <div className={styles.infoRow}>
+                        <p className={styles.label}>TOOLS</p>
+                        <p className={styles.value}>Adobe Illustrator, Adobe InDesign</p>
+                    </div>
+                    </div>
+
+                    {/* Right Column */}
+                    <div className={styles.rightColumn}>
+                        <h3 className={styles.overviewTitle}>Overview</h3>
+                        <p className={styles.overviewText}>
+                            <strong>“Menu Design”</strong> is a school exercise focused on applying design skills using—&nbsp;
+                            <strong>Adobe Illustrator</strong> and <strong>InDesign</strong> to create a well-organized and visually appealing menu. The project emphasizes
+                            <strong>layout design, typography, and creativity</strong>, ensuring the menu is both functional and aesthetically engaging.
+                        </p>
+                    </div>
+                    <div>
+                        <img 
+                            src="/images/menu-2.png" 
+                            alt="Menu Thumbnail"
+                            className={styles.image}
+                        />
+                    </div>
+
+              </div>
+            </div>
             </div>
             <Footer />
         </div>

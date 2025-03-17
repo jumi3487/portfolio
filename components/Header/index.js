@@ -32,7 +32,7 @@ export default function Header() {
                     </section>
                     <section>
                         <Link href="/contacts" passHref className={styles.link}>
-                            <p className={router.pathname === "/contacts" ? styles.active : ""}>Contacts</p>
+                            <p className={router.pathname === "/contacts" ? styles.active : ""}>Contact</p>
                         </Link>
                     </section>
                     

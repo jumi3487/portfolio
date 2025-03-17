@@ -10,10 +10,12 @@ import { useRef } from "react";
 import BeepStyleGuide from "../../components/BeepStyleGuide";
 import BeepFrames from "../../components/BeepFrames";
 import BeepFunctions from "@/components/BeepFunctions";
+import BeepCompetitive from "@/components/BeepCompetitive";
 
 export default function Beep() {
 
     // Create refs for each section
+    const competitiveRef = useRef(null);
     const personaRef = useRef(null);
     const sitemapRef = useRef(null);
     const styleGuideRef = useRef(null);
@@ -41,7 +43,7 @@ export default function Beep() {
           </div>
           <div>
             <Image 
-                src="/images/beep/1.png" 
+                src="/images/beep/Beep_Big_1.png" 
                 width={1477} 
                 height={1570} 
                 alt="Beep Thumbnail"
@@ -190,9 +192,20 @@ export default function Beep() {
                 </svg>
               </div>
               <div className={styles.section}>
-                <section className={styles.sectionContainer} onClick={() => scrollToSection(personaRef)}>
+                <section className={styles.sectionContainer} onClick={() => scrollToSection(competitiveRef)}>
                   <div className={styles.sectionNumber}>
                     <h3>01</h3>
+                    <h3>Competitive Analysis</h3>
+                  </div>
+                  
+                  <div className={styles.sectionParagraph}>
+                    <p>Beep stands out in the competitive landscape by analyzing industry leaders, identifying strengths and gaps, and refining its features to offer a more effective, user-centric safety solution.</p>
+                  </div>
+                </section>
+                <div className={styles.divide}></div>
+                <section className={styles.sectionContainer} onClick={() => scrollToSection(personaRef)}>
+                  <div className={styles.sectionNumber}>
+                    <h3>02</h3>
                     <h3>User Personas</h3>
                   </div>
                   <div className={styles.sectionParagraph}>
@@ -236,6 +249,9 @@ export default function Beep() {
               </div>
             </div>
             <div className={styles.projectsDevelopContainer}>
+              <div ref={competitiveRef}>
+                <BeepCompetitive/>
+              </div>
               <div className={styles.persona} ref={personaRef}>
                 <BeepCarousel className={styles.carousel}/>
               </div>

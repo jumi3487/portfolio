@@ -50,9 +50,9 @@ export default function MenuDesign(){
                             <div className={styles.rightColumn}>
                                 <h3 className={styles.overviewTitle}>Overview</h3>
                                 <p className={styles.overviewText}>
-                                    <strong>“Menu Design”</strong> is a motion graphics project that explains the five different layers of the ocean. It was made using—&nbsp;
-                                    <strong>Adobe Illustrator</strong> and <strong>Adobe After Effects</strong> to create a short animated video. The video helps viewers learn about each ocean layer, from the
-                                    <strong>sunlit surface</strong> to the <strong>deepest, darkest depths</strong> . It includes simple visuals and smooth animations to show how the ocean changes at different depths and what kind of sea creatures live there.
+                                    <strong>“Menu Design”</strong> is a school exercise focused on applying design skills using—&nbsp;
+                                    <strong>Adobe Illustrator</strong> and <strong>InDesign</strong> to create a well-organized and visually appealing menu. The project emphasizes
+                                    <strong>layout design, typography, and creativity</strong> , ensuring the menu is both functional and aesthetically engaging.
                                 </p>
                             </div>
                         </div>

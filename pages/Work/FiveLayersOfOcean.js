@@ -54,8 +54,14 @@ export default function FiveLayersOfOcean(){
                             <strong>sunlit surface</strong> to the <strong>deepest, darkest depths</strong> . It includes simple visuals and smooth animations to show how the ocean changes at different depths and what kind of sea creatures live there.
                         </p>
                     </div>
-                    
+
               </div>
+            </div>
+            <div>
+                <video width="1000" height="800" controls>
+                    <source src="/videos/five-layers-11.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
           </div>
         </div>

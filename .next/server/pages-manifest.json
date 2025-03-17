@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/Work/ArtFlow": "pages/Work/ArtFlow.js",
-  "/Work/FrenchFries": "pages/Work/FrenchFries.js",
-  "/Work/FiveLayersOfOcean": "pages/Work/FiveLayersOfOcean.js"
+  "/Work/MenuDesign": "pages/Work/MenuDesign.js",
+  "/Work/ArtFlow": "pages/Work/ArtFlow.js"
 }

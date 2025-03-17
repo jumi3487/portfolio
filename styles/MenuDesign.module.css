@@ -198,3 +198,21 @@
 }
 
 
+.menu1 {
+    border-radius: 20px 20px 0 0;
+}
+
+.menu3 {
+    border-radius: 0 0 20px 20px;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+

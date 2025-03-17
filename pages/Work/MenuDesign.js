@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Header from "../../components/Header";
-import styles from "../../styles/Sparkly.module.css";
+import styles from "../../styles/MenuDesign.module.css";
 import Image from 'next/image';
 import Footer from "../../components/Footer";
 
@@ -38,11 +38,11 @@ export default function MenuDesign(){
                             </div>
                             <div className={styles.infoRow}>
                                 <p className={styles.label}>ROLE</p>
-                                <p className={styles.value}>Graphic Designer / Video Editor</p>
+                                <p className={styles.value}>Graphic Designer</p>
                             </div>
                             <div className={styles.infoRow}>
                                 <p className={styles.label}>TOOLS</p>
-                                <p className={styles.value}>Adobe Illustrator, Adobe After Effects</p>
+                                <p className={styles.value}>Adobe Illustrator, Adobe InDesign</p>
                             </div>
                             </div>
 
@@ -62,17 +62,17 @@ export default function MenuDesign(){
                     <img 
                         src="/images/menu-page-1.png" 
                         alt="Menu Thumbnail"
-                        className={styles.image}
+                        className={styles.menu1}
                     />
                     <img 
                         src="/images/menu-page-2.png" 
                         alt="Menu Thumbnail"
-                        className={styles.image}
+                        className={styles.menu2}
                     />
                     <img 
                         src="/images/menu-page-3.png" 
                         alt="Menu Thumbnail"
-                        className={styles.image}
+                        className={styles.menu3}
                     />
                 </div>
             </div>

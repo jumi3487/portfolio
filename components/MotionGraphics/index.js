@@ -36,11 +36,11 @@ export default function MotionGraphics() {
               </button>
             </div>
             <div className={styles.motionGraphicProjects}>
-                <img className={styles.projectsCardImg} src={'/images/french-fries.png'} alt="thumbnail" />
+                <a className={styles.link} href="/Work/FrenchFries" passHref><img className={styles.projectsCardImg} src={'/images/french-fries.png'} alt="thumbnail" /></a>
                 <div className={styles.ProjectInfo}>
                 <h1 className={styles.motionGraphicProjectsh1}>01</h1>
                 <h2 className={styles.motionGraphicProjectsh2}>How To Make French Fries?</h2>
-                <button className={styles.projectsContentButton}>Watch it</button>
+                <a className={styles.link} href="/Work/FrenchFries" passHref><button className={styles.projectsContentButton}>Watch it</button></a>
                 </div>
             </div>
                     {/*Motion Graphic 1*/}

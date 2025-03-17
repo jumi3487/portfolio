@@ -46,12 +46,12 @@ export default function MotionGraphics() {
                     {/*Motion Graphic 1*/}
                     {/*Motion Graphic 2*/}
             <div className={styles.motionGraphicProjects2}>
-                    <img className={styles.projectsCardImg} src={'/images/five-layers.png'} alt="thumbnail" />
-                    <div className={styles.ProjectInfo2}>
-                    <h1 className={styles.motionGraphicProjectsh1}>02</h1>
-                    <h2 className={styles.motionGraphicProjectsh2}>Five Layers Of Ocean</h2>
-                    <button className={styles.projectsContentButton}>Watch it</button>
-                    </div>
+                <a className={styles.link} href="/Work/FiveLayersOfOcean" passHref><img className={styles.projectsCardImg} src={'/images/five-layers.png'} alt="thumbnail" /></a>
+                <div className={styles.ProjectInfo2}>
+                <h1 className={styles.motionGraphicProjectsh1}>02</h1>
+                <h2 className={styles.motionGraphicProjectsh2}>Five Layers Of Ocean</h2>
+                <a className={styles.link} href="/Work/FiveLayersOfOcean" passHref><button className={styles.projectsContentButton}>Watch it</button></a>
+                </div>
             </div>
             {/*Motion Graphic 2*/}
         </div>

@@ -3,5 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/Work/Beep": "pages/Work/Beep.js"
+  "/Work/Beep": "pages/Work/Beep.js",
+  "/Work/Lunette": "pages/Work/Lunette.js"
 }

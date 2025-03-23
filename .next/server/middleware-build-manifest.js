@@ -10,10 +10,15 @@ self.__BUILD_MANIFEST = {
   "rootMainFiles": [],
   "rootMainFilesTree": {},
   "pages": {
-    "/Work/MenuDesign": [
+    "/Work/ArtFlow": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Work/MenuDesign.js"
+      "static/chunks/pages/Work/ArtFlow.js"
+    ],
+    "/Work/Beep": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Work/Beep.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

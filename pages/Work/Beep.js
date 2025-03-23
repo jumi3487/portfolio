@@ -11,6 +11,7 @@ import BeepStyleGuide from "../../components/BeepStyleGuide";
 import BeepFrames from "../../components/BeepFrames";
 import BeepFunctions from "@/components/BeepFunctions";
 import BeepCompetitive from "@/components/BeepCompetitive";
+import BeepBrochure from "@/components/BeepBrochure";
 
 export default function Beep() {
 
@@ -273,6 +274,25 @@ export default function Beep() {
               <BeepFunctions/>
           </div>
           {/**********  MAIN FEATURES ***********/}
+          {/**********  Printed Materials ***********/}
+          <div className={styles.printWrapper}>
+            <div className={styles.brochure}>
+              <BeepBrochure/>
+            </div>
+            <div className={styles.print}>
+              <img 
+                  src="/images/beep/business-card.png" 
+                  alt="Business Card"
+                  className={styles.image}
+              />
+              <img 
+                  src="/images/beep/stickers.png" 
+                  alt="Stickers"
+                  className={styles.image}
+              />
+            </div>
+          </div>
+          
 
           {/**********  LEARN MORE ***********/}
           <div className={styles.learnmore}>

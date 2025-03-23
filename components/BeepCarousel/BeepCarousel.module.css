@@ -13,5 +13,8 @@
     padding: 15px;
     border: none;
 }
-
-
+.image {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 252, 0.20);
+}

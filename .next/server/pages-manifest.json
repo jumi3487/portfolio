@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/Work": "pages/Work.js",
-  "/Work/Lunette": "pages/Work/Lunette.js",
-  "/Work/ArtFlow": "pages/Work/ArtFlow.js"
+  "/Work/ArtFlow": "pages/Work/ArtFlow.js",
+  "/Work/Lunette": "pages/Work/Lunette.js"
 }

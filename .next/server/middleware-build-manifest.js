@@ -10,15 +10,15 @@ self.__BUILD_MANIFEST = {
   "rootMainFiles": [],
   "rootMainFilesTree": {},
   "pages": {
-    "/Work": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Work.js"
-    ],
     "/Work/ArtFlow": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Work/ArtFlow.js"
+    ],
+    "/Work/Lunette": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Work/Lunette.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

@@ -4,6 +4,5 @@
   "/_document": "pages/_document.js",
   "/Work": "pages/Work.js",
   "/Work/Lunette": "pages/Work/Lunette.js",
-  "/": "pages/index.js",
   "/Work/ArtFlow": "pages/Work/ArtFlow.js"
 }

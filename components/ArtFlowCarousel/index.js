@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function ArtFlowCarousel(){
     const images = [
-        "/images/artflow/Persona1.png",
-        "/images/artflow/Persona2.png",
+        "/images/artflow/persona1.png",
+        "/images/artflow/persona2.png",
       ];
     
       const [currentIndex, setCurrentIndex] = useState(0);

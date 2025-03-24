@@ -51,7 +51,7 @@ export default function FrenchFries(){
                         <p className={styles.overviewText}>
                             <strong>“How To Make French Fries ?”</strong> is a motion graphics project project that uses
                             <strong>video editing, script planning, and graphic design </strong> to visually explain the step-by-step process of making homemade French fries. It combines <strong>animated visuals and smooth transitions</strong>
-                             to showcase key steps like cutting, soaking, frying, and seasoning, making the tutorial engaging and easy to follow.
+                            &nbsp;to showcase key steps like cutting, soaking, frying, and seasoning, making the tutorial engaging and easy to follow.
                         </p>
                     </div>
 

@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Work": "pages/Work.js",
-  "/Work/FiveLayersOfOcean": "pages/Work/FiveLayersOfOcean.js",
-  "/Work/FrenchFries": "pages/Work/FrenchFries.js"
+  "/Work/FrenchFries": "pages/Work/FrenchFries.js",
+  "/": "pages/index.js",
+  "/Work/Lunette": "pages/Work/Lunette.js"
 }

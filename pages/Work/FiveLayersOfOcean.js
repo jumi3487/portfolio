@@ -58,10 +58,45 @@ export default function FiveLayersOfOcean(){
               </div>
             </div>
             <div>
-                <video width="1000" height="800" controls>
-                    <source src="/videos/five-layers-11.mp4" type="video/mp4" />
+                <video className={styles.video} controls>
+                    <source className={styles.video} src="/videos/five-layers-11.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+            </div>
+            <div className={styles.assets}>
+                <h3>Assets</h3>
+                <div className={styles.assetsImg}>
+                    <img 
+                        src="/images/asset/bg.png" 
+                        alt="Five Layers Of Ocean Thumbnail"
+                        className={styles.assetsImage}
+                    />
+                    <img 
+                        src="/images/asset/1.png" 
+                        alt="Five Layers Of Ocean Thumbnail"
+                        className={styles.assetsImage}
+                    />
+                    <img 
+                        src="/images/asset/2.png" 
+                        alt="Five Layers Of Ocean Thumbnail"
+                        className={styles.assetsImage}
+                    />
+                    <img 
+                        src="/images/asset/3.png" 
+                        alt="Five Layers Of Ocean Thumbnail"
+                        className={styles.assetsImage}
+                    />
+                    <img 
+                        src="/images/asset/4.png" 
+                        alt="Five Layers Of Ocean Thumbnail"
+                        className={styles.assetsImage}
+                    />
+                    <img 
+                        src="/images/asset/5.png" 
+                        alt="Five Layers Of Ocean Thumbnail"
+                        className={styles.assetsImage}
+                    />
+                </div>
             </div>
           </div>
         </div>

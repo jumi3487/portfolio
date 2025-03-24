@@ -198,3 +198,41 @@
 }
 
 
+/*VIDEO*/
+.video {
+    margin-top: 100px;
+    width: 100%;
+}
+.assets {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.assets h3 {
+    color: var(--blue);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.assetsImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.assetsImage {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+}

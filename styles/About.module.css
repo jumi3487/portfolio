@@ -5,3 +5,27 @@
   background-repeat: no-repeat; /* Stops it from repeating */
 }
 
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.stickyCards {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-40%, -40%);
+    will-change: transform;
+    width: 45%;
+    height: 70%;
+}
+
+
+

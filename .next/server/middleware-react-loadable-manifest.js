@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"pages/About/index.js -> @studio-freight/lenis\":{\"id\":\"pages/About/index.js -> @studio-freight/lenis\",\"files\":[\"static/chunks/node_modules_studio-freight_lenis_dist_lenis_mjs.js\"]},\"pages/About/index.js -> gsap\":{\"id\":\"pages/About/index.js -> gsap\",\"files\":[\"static/chunks/node_modules_gsap_index_js.js\"]},\"pages/About/index.js -> gsap/ScrollTrigger\":{\"id\":\"pages/About/index.js -> gsap/ScrollTrigger\",\"files\":[\"static/chunks/node_modules_gsap_ScrollTrigger_js.js\"]}}"

@@ -19,8 +19,9 @@
 
 .image {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: auto; /* <-- This line is key */
+    box-shadow: 30px 10px 20px rgba(0, 0, 0, 10);
+    border-radius: 5px; /* Optional, looks cleaner */
 }
 
 .stickyCards {

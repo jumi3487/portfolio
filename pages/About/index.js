@@ -90,12 +90,12 @@ export default function About() {
     <>
       <div className={styles.body}>
         <Head>
-          <title>Works</title>
+          <title>About</title>
         </Head>
         <Header />
         <div className={styles.container}>
           <section className={`${styles.stickyCards} stickyCards`}>
-            {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+            {[1, 2, 3, 7, 4, 5, 6].map((n) => (
               <div key={n} className={`${styles.card} card`}>
                 <img
                   className={styles.image}

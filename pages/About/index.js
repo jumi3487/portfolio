@@ -25,7 +25,7 @@ export default function About() {
       gsap.ticker.lagSmoothing(0);
 
       const cards = gsap.utils.toArray(".card");
-      const rotations = [-12, 12, -10, 10, -5, 5, -2];
+      const rotations = [-10, 10, -8, 8, -5, 5, -2];
 
       cards.forEach((card, index) => {
         gsap.set(card, {

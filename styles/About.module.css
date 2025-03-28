@@ -20,7 +20,7 @@
 .image {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .stickyCards {
@@ -32,15 +32,13 @@
 
 .card {
     position: absolute;
-    top: 30%;
-    left: 55%;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
     will-change: transform;
     width: 45%;
     height: 70%;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 
